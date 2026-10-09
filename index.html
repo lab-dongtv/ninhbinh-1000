@@ -1,0 +1,1432 @@
+<!doctype html>
+<html lang="ja" data-ui="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>千年の古都ニンビン · Ninh Bình 10/10</title>
+<meta name="description" content="2026年10月10日（土）ニンビン日帰り旅のしおり — Lịch trình & cẩm nang Ninh Bình 1 ngày – Khám phá Việt Nam.">
+<meta name="theme-color" content="#7d1d17">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif:wght@600;700&family=Noto+Serif+JP:wght@600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --son:#7d1d17;        /* đỏ son cung đình */
+  --son-2:#a3302a;
+  --dong:#b07d2b;       /* vàng đồng */
+  --dong-soft:#e9d3a4;
+  --muc:#1f1b17;        /* mực tàu */
+  --muc-2:#4a423a;
+  --giay:#f5eedf;       /* giấy dó */
+  --giay-2:#ece2cc;
+  --reu:#3d5a45;        /* rêu đá vôi */
+  --nuoc:#2c5f66;       /* nước sông */
+  --card:#fffaf0;
+  --line:#d9c9a6;
+  --shadow:0 1px 2px rgba(60,40,10,.08),0 6px 20px rgba(60,40,10,.07);
+  --serif:"Noto Serif","Noto Serif JP",serif;
+  --sans:"Be Vietnam Pro","Noto Sans JP",system-ui,sans-serif;
+  --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:104px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--giay);color:var(--muc);font-family:var(--sans);font-size:16px;line-height:1.75;
+  background-image:radial-gradient(rgba(176,125,43,.06) 1px,transparent 1px);background-size:5px 5px}
+img{max-width:100%;display:block}
+a{color:var(--son);text-underline-offset:3px}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.35;margin:0}
+p{margin:.5em 0}
+small{font-size:.82em}
+
+/* ---------- language switching ---------- */
+[data-ui="ja"] .vi{display:none!important}
+[data-ui="vi"] .ja{display:none!important}
+[data-ui="both"] .vi{color:var(--muc-2)}
+[data-ui="both"] p.vi,[data-ui="both"] div.vi,[data-ui="both"] li .vi{font-size:.94em}
+[data-ui="both"] span.ja + span.vi::before{content:" / ";color:var(--dong)}
+[data-ui="both"] h1 span.ja + span.vi::before,[data-ui="both"] h2 span.ja + span.vi::before{content:"";}
+[data-ui="both"] .top .vi{display:none!important}
+[data-ui="both"] :is(.hero,.edict,footer) .vi{color:inherit;opacity:.88}
+[data-ui="both"] h1 span.vi,[data-ui="both"] h2 span.vi{display:block;font-size:.62em;margin-top:.2em}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(125,29,23,.97);color:#fff;backdrop-filter:blur(6px);
+  box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.top-in{max-width:980px;margin:0 auto;display:flex;align-items:center;gap:10px;padding:8px 16px}
+.seal{width:34px;height:34px;flex:none;border:2px solid var(--dong-soft);border-radius:6px;display:grid;place-items:center;
+  font-family:"Noto Serif JP",serif;font-weight:900;font-size:13px;line-height:1;color:var(--dong-soft);letter-spacing:-1px;writing-mode:vertical-rl}
+.brand{font-family:var(--serif);font-weight:700;font-size:15px;line-height:1.25;flex:1;min-width:0}
+.brand .b1{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.brand small{display:block;font-family:var(--sans);font-weight:400;opacity:.8;font-size:11px}
+.lang{display:flex;border:1px solid rgba(255,255,255,.45);border-radius:999px;overflow:hidden;flex:none}
+.lang button{all:unset;cursor:pointer;font-size:12.5px;padding:5px 10px;color:#fff;font-weight:500}
+.lang button[aria-pressed="true"]{background:var(--dong-soft);color:var(--son)}
+.chips{max-width:980px;margin:0 auto;display:flex;gap:6px;overflow-x:auto;padding:0 16px 8px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;color:#fff;text-decoration:none;font-size:12.5px;padding:3px 11px;border-radius:999px;background:rgba(255,255,255,.13);white-space:nowrap}
+.chips a:active{background:rgba(255,255,255,.3)}
+
+/* ---------- now / next bar ---------- */
+.now{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:0 10px calc(8px + env(safe-area-inset-bottom));pointer-events:none}
+.now-card{max-width:760px;margin:0 auto;pointer-events:auto}
+body{padding-bottom:96px}
+.now-card{background:var(--muc);color:#fff;border-radius:12px;padding:10px 14px;display:flex;gap:12px;align-items:center;box-shadow:var(--shadow);border-left:5px solid var(--dong)}
+.now-card .lbl{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--dong-soft)}
+.now-card .ttl{font-weight:700;font-size:15px;line-height:1.35}
+.now-card .sub{font-size:12.5px;opacity:.85;line-height:1.4}
+.now-card .grow{flex:1;min-width:0}
+.now-card .btns{display:flex;flex-direction:column;gap:5px;flex:none}
+.now-card .ttl{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.now-card .btn{font-size:12px;padding:5px 10px}
+.now-card.collapsed .sub{display:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:600;font-size:13.5px;line-height:1.2;
+  padding:8px 13px;border-radius:999px;border:1px solid var(--son);color:var(--son);background:#fff;white-space:nowrap}
+.btn.solid{background:var(--son);color:#fff}
+.btn.gold{background:var(--dong);border-color:var(--dong);color:#fff}
+.btn.ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.btns-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:88vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,10,5,.15) 0%,rgba(20,10,5,.1) 40%,rgba(30,10,5,.82) 100%)}
+.hero-in{position:relative;z-index:2;max-width:980px;margin:0 auto;padding:90px 16px 56px;width:100%}
+.years{font-family:var(--serif);font-weight:700;font-size:15px;letter-spacing:.12em;color:var(--dong-soft);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.years i{font-style:normal;opacity:.6}
+.hero h1{font-size:clamp(30px,8vw,56px);font-weight:900;margin:.2em 0 .25em;text-shadow:0 2px 18px rgba(0,0,0,.4)}
+.hero .lead{font-size:clamp(15px,3.8vw,18px);max-width:640px;text-shadow:0 1px 8px rgba(0,0,0,.5)}
+.anniv{margin-top:16px;display:inline-block;background:rgba(125,29,23,.85);border:1px solid var(--dong-soft);border-radius:10px;padding:10px 14px;font-size:14px;max-width:640px;line-height:1.6}
+.anniv b{color:var(--dong-soft)}
+
+/* ---------- layout ---------- */
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+section{padding:46px 0 10px}
+.sec-h{display:flex;align-items:flex-start;gap:12px;margin-bottom:18px}
+.sec-no{flex:none;width:44px;height:44px;border-radius:50%;background:var(--son);color:var(--dong-soft);display:grid;place-items:center;
+  font-family:"Noto Serif JP",serif;font-weight:900;font-size:19px;box-shadow:0 0 0 3px var(--giay),0 0 0 4px var(--dong)}
+.sec-h h2{font-size:clamp(22px,5.5vw,30px);color:var(--son)}
+.sec-h p{margin:.2em 0 0;color:var(--muc-2);font-size:14.5px}
+.karst{display:block;width:100%;height:46px;color:var(--reu);opacity:.22;margin:26px 0 0}
+
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:16px}
+.grid{display:grid;gap:14px}
+@media(min-width:720px){.grid.c2{grid-template-columns:1fr 1fr}.grid.c3{grid-template-columns:repeat(3,1fr)}}
+.tag{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--giay-2);color:var(--muc-2);margin-right:4px;line-height:1.6}
+.tag.red{background:var(--son);color:#fff}
+.tag.gold{background:var(--dong);color:#fff}
+.tag.green{background:var(--reu);color:#fff}
+.tag.blue{background:var(--nuoc);color:#fff}
+figure{margin:0}
+figure img{border-radius:10px;width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--giay-2)}
+figcaption{font-size:12px;color:var(--muc-2);margin-top:4px;line-height:1.45}
+.callout{border-left:4px solid var(--dong);background:#fff6e2;padding:12px 14px;border-radius:0 10px 10px 0;font-size:14.5px}
+.callout.red{border-color:var(--son);background:#fbeceb}
+.callout.green{border-color:var(--reu);background:#edf3ee}
+ul.clean{margin:.4em 0;padding-left:1.2em}
+ul.clean li{margin:.25em 0}
+
+/* ---------- group info ---------- */
+.info{margin-top:-30px;position:relative;z-index:5}
+.info .card{display:grid;gap:12px}
+@media(min-width:720px){.info .card{grid-template-columns:1.2fr 1fr 1fr}}
+.info h3{font-size:13px;color:var(--dong);letter-spacing:.06em;font-family:var(--sans);margin-bottom:2px}
+.info .big{font-family:var(--serif);font-size:18px;font-weight:700}
+.car{display:flex;gap:8px;align-items:flex-start;font-size:14.5px;line-height:1.5}
+.car b{color:var(--son)}
+
+/* ---------- timeline ---------- */
+.tl{position:relative;margin:0;padding:0;list-style:none}
+.tl::before{content:"";position:absolute;left:21px;top:8px;bottom:8px;width:2px;background:repeating-linear-gradient(var(--dong) 0 6px,transparent 6px 11px)}
+.tl-item{position:relative;padding:0 0 22px 56px}
+.tl-icon{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:22px;background:var(--card);border:2px solid var(--dong);box-shadow:var(--shadow)}
+.tl-item[data-kind="car"] .tl-icon{border-color:var(--muc-2)}
+.tl-item[data-kind="boat"] .tl-icon{border-color:var(--nuoc)}
+.tl-item[data-kind="hike"] .tl-icon{border-color:var(--reu)}
+.tl-item[data-kind="food"] .tl-icon{border-color:var(--son)}
+.tl-time{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--son);line-height:1.3}
+.tl-dur{font-size:12.5px;color:var(--muc-2);font-weight:500;margin-left:6px;font-family:var(--sans)}
+.tl-item h3{font-size:18.5px;margin:2px 0 6px}
+.tl-item .card{padding:14px}
+.tl-item.is-now .card{outline:3px solid var(--dong);outline-offset:2px}
+.tl-item.is-now .tl-icon{background:var(--dong);animation:pulse 2s infinite}
+.tl-item.is-done{opacity:.6}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(176,125,43,.6)}50%{box-shadow:0 0 0 9px rgba(176,125,43,0)}}
+.facts{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 8px}
+.facts span{font-size:12.5px;background:var(--giay-2);border-radius:8px;padding:2px 8px}
+.leader{margin-top:10px;background:#f1ece0;border:1px dashed var(--muc-2);border-radius:10px;padding:10px 12px;font-size:14px}
+.leader > b:first-child{display:block;font-size:12px;letter-spacing:.06em;color:var(--muc-2);margin-bottom:2px}
+.leader ul{margin:.2em 0;padding-left:1.15em}
+.feel{margin-top:10px;background:#eef3ec;border-left:4px solid var(--reu);border-radius:0 10px 10px 0;padding:10px 12px;font-size:14.5px}
+.feel > b:first-child{display:block;font-size:12px;letter-spacing:.06em;color:var(--reu);margin-bottom:2px}
+.see{margin-top:10px;font-size:14.5px}
+.see > b:first-child{display:block;font-size:12px;letter-spacing:.06em;color:var(--son);margin-bottom:2px}
+.stops{list-style:none;padding:0;margin:8px 0;counter-reset:s}
+.stops li{position:relative;padding:3px 0 3px 30px;font-size:14.5px;border-bottom:1px dotted var(--line)}
+.stops li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:5px;width:21px;height:21px;border-radius:50%;background:var(--nuoc);color:#fff;font-size:11.5px;display:grid;place-items:center;font-weight:700}
+.stops li.land::before{background:var(--son)}
+.psteps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.psteps figure{position:relative}
+.psteps img{aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+.psteps .n{position:absolute;left:6px;top:6px;width:24px;height:24px;border-radius:50%;background:var(--son);color:#fff;font-weight:700;font-size:13px;display:grid;place-items:center;box-shadow:0 1px 4px rgba(0,0,0,.4)}
+.psteps figcaption{font-size:12.5px;line-height:1.5;color:var(--muc)}
+.psteps figcaption b{color:var(--son)}
+.psteps figcaption small{display:block;color:var(--muc-2);font-size:10.5px}
+.mini-img{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.mini-img img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.mini-img figcaption{font-size:11.5px}
+
+/* ---------- history ---------- */
+.chron{list-style:none;margin:0;padding:0}
+.chron li{display:grid;grid-template-columns:62px 1fr;gap:10px;padding:10px 0;border-bottom:1px solid var(--line)}
+.chron .y{font-family:var(--serif);font-weight:700;font-size:19px;color:var(--son);line-height:1.3}
+.chron li.key .y{color:#fff;background:var(--son);border-radius:8px;text-align:center;align-self:start;padding:2px 0}
+.chron .jp{display:block;margin-top:4px;font-size:12.5px;color:var(--nuoc);background:#e8f0f0;border-radius:6px;padding:2px 8px}
+.chron .jp::before{content:"🇯🇵 "}
+.reason h3{font-size:17px;color:var(--son);margin-bottom:4px}
+.reason .ic{font-size:26px;line-height:1}
+.edict{background:var(--son);color:#fff;border-radius:var(--r);padding:20px 18px;position:relative;overflow:hidden}
+.edict::after{content:"詔";position:absolute;right:-6px;bottom:-34px;font-family:"Noto Serif JP",serif;font-weight:900;font-size:150px;opacity:.09;line-height:1}
+.edict .han{font-family:"Noto Serif JP",serif;font-size:21px;letter-spacing:.08em;color:var(--dong-soft);font-weight:700}
+.edict p{position:relative;z-index:1}
+.kanji{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}
+.kanji div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center}
+.kanji .k{font-family:"Noto Serif JP",serif;font-size:28px;font-weight:900;color:var(--son);line-height:1.2}
+.kanji .r{font-weight:700;font-size:14px}
+.kanji .m{font-size:12.5px;color:var(--muc-2);line-height:1.45}
+
+/* ---------- misc ---------- */
+.phr{width:100%;border-collapse:collapse;font-size:14.5px}
+.phr td{padding:7px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+.phr td:first-child{font-weight:700;color:var(--son);white-space:nowrap}
+.phr.menu td:first-child{white-space:normal}
+.check{list-style:none;padding:0;margin:0;columns:2;column-gap:14px}
+@media(max-width:420px){.check{columns:1}}
+.check li{break-inside:avoid;padding:3px 0 3px 26px;position:relative;font-size:14.5px}
+.check li::before{content:"☐";position:absolute;left:2px;color:var(--son);font-size:16px;top:2px}
+.links a{display:flex;justify-content:space-between;gap:10px;padding:10px 4px;border-bottom:1px solid var(--line);text-decoration:none;color:var(--muc);font-size:14.5px}
+.links a::after{content:"↗";color:var(--son);font-weight:700}
+footer{margin-top:40px;background:var(--muc);color:#d8cfbf;font-size:12.5px;padding:26px 0 calc(30px + env(safe-area-inset-bottom))}
+footer a{color:var(--dong-soft)}
+footer h4{color:#fff;font-size:14px;margin:0 0 6px}
+.credits{columns:2;column-gap:20px;line-height:1.5}
+@media(max-width:600px){.credits{columns:1}}
+.credits div{break-inside:avoid;margin-bottom:6px}
+</style>
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<header class="top">
+  <div class="top-in">
+    <div class="seal" aria-hidden="true">華閭</div>
+    <div class="brand">
+      <div class="b1"><span class="ja">千年の古都ニンビン</span><span class="vi">Ninh Bình – Cố đô ngàn năm</span></div>
+      <small>2026.10.10 (土) · Khám phá Việt Nam</small>
+    </div>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-set="ja">日本語</button>
+      <button type="button" data-set="vi">Việt</button>
+      <button type="button" data-set="both">JA+VI</button>
+    </div>
+  </div>
+  <nav class="chips">
+    <a href="#timeline"><span class="ja">⏱ 行程</span><span class="vi">⏱ Lịch trình</span></a>
+    <a href="#history"><span class="ja">📜 千年の歴史</span><span class="vi">📜 Lịch sử</span></a>
+    <a href="#culture"><span class="ja">🏮 暮らし</span><span class="vi">🏮 Văn hoá</span></a>
+    <a href="#character"><span class="ja">🇻🇳 国民性</span><span class="vi">🇻🇳 Tính cách Việt</span></a>
+    <a href="#trangan"><span class="ja">🛶 チャンアン</span><span class="vi">🛶 Tràng An</span></a>
+    <a href="#hangmua"><span class="ja">⛰ ハンムア</span><span class="vi">⛰ Hang Múa</span></a>
+    <a href="#food"><span class="ja">🐐 ヤギ料理</span><span class="vi">🐐 Dê núi</span></a>
+    <a href="#kong"><span class="ja">🦍 キングコング</span><span class="vi">🦍 Kong</span></a>
+    <a href="#kanji"><span class="ja">漢字</span><span class="vi">Chữ Hán</span></a>
+    <a href="#prep"><span class="ja">🎒 準備</span><span class="vi">🎒 Chuẩn bị</span></a>
+    <a href="#links"><span class="ja">🔗 リンク</span><span class="vi">🔗 Liên kết</span></a>
+  </nav>
+</header>
+
+<!-- ================= NOW / NEXT ================= -->
+<div class="now" id="now" hidden>
+  <div class="now-card">
+    <div class="grow">
+      <div class="lbl" id="now-lbl"></div>
+      <div class="ttl" id="now-ttl"></div>
+      <div class="sub" id="now-sub"></div>
+    </div>
+    <div class="btns">
+      <a class="btn gold" id="now-go" href="#timeline"><span class="ja">詳細</span><span class="vi">Chi tiết</span></a>
+      <a class="btn ghost" id="now-map" href="#" target="_blank" rel="noopener">📍 Map</a>
+    </div>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<div class="hero">
+  <img src="assets/hanh-cung-vu-lam.jpg" alt="Hành cung Vũ Lâm, Tràng An">
+  <div class="hero-in">
+    <div class="years"><span>968</span><i>—</i><span>1010</span><i>—</i><span>2010</span><i>—</i><span>2026</span></div>
+    <h1><span class="ja">千年の古都へ。</span><span class="vi">Về miền cố đô ngàn năm.</span></h1>
+    <p class="lead">
+      <span class="ja">ハノイから南へ約100km。石灰岩の峰々に守られた「華閭（ホアルー）」は、ベトナム最初の統一王朝の都でした。小舟で洞窟をくぐり、500段の石段を登り、名物のヤギ料理を味わう——ベトナムの「原点」を巡る一日です。</span>
+      <span class="vi">Cách Hà Nội ~100 km về phía Nam, Hoa Lư – được núi đá vôi bao bọc – là kinh đô của nhà nước phong kiến tập quyền đầu tiên của Việt Nam. Một ngày ngồi thuyền xuyên hang, leo 500 bậc đá, thưởng thức dê núi – trở về "điểm khởi đầu" của Việt Nam.</span>
+    </p>
+    <div class="anniv">
+      <span class="ja">📅 <b>16年前の今日、2010年10月10日</b>——ハノイは「昇龍（タンロン）遷都千年祭」の式典を行いました。その都の出発点が、今日訪れるホアルーです。</span>
+      <span class="vi">📅 <b>Đúng ngày này 16 năm trước – 10/10/2010</b> – Hà Nội tổ chức Đại lễ 1000 năm Thăng Long. Và nơi kinh đô ấy khởi hành chính là Hoa Lư, nơi chúng ta đến hôm nay.</span>
+    </div>
+  </div>
+</div>
+
+<main>
+<!-- ================= INFO ================= -->
+<div class="wrap info">
+  <div class="card">
+    <div>
+      <h3><span class="ja">日程・集合</span><span class="vi">NGÀY & ĐIỂM TẬP TRUNG</span></h3>
+      <div class="big"><span class="ja">10月10日（土）08:15 集合</span><span class="vi">Thứ Bảy 10/10 · tập trung 08:15</span></div>
+      <div style="font-size:14px">Grandiose Hotel &amp; Spa <span class="ja">ロビー</span><span class="vi">(sảnh)</span> · <span class="ja">出発 08:30</span><span class="vi">xuất phát 08:30</span></div>
+      <div class="btns-row">
+        <a class="btn solid" href="https://maps.app.goo.gl/1vvyx2zfbM4LEgXf9">📍 <span class="ja">ホテル地図</span><span class="vi">Bản đồ khách sạn</span></a>
+        <a class="btn" href="https://maps.app.goo.gl/m1QamjrkPUNzmjPZA">🗺 <span class="ja">全スポット地図</span><span class="vi">Danh sách địa điểm</span></a>
+        <a class="btn" data-route="Grandiose Hotel & Spa, 11 Liễu Giai, Ba Đình, Hà Nội|Nhà hàng Thành Long Vua dê Ninh Bình|Bến thuyền Tràng An, Ninh Bình|Hang Múa, Ninh Xuân, Ninh Bình|Grandiose Hotel & Spa, 11 Liễu Giai, Ba Đình, Hà Nội">🚗 <span class="ja">1日のルート</span><span class="vi">Lộ trình cả ngày</span></a>
+      </div>
+    </div>
+    <div>
+      <h3><span class="ja">車両配置</span><span class="vi">PHÂN CÔNG XE</span></h3>
+      <div class="car">🚙 <div><b><span class="ja">L車</span><span class="vi">Xe L</span></b> <small>(5<span class="ja">人乗り</span><span class="vi"> chỗ</span>)</small><br>S</div></div>
+      <div class="car" style="margin-top:6px">🚙 <div><b><span class="ja">T車</span><span class="vi">Xe T</span></b> <small>(5<span class="ja">人乗り</span><span class="vi"> chỗ</span>)</small><br>F, O, Đ</div></div>
+    </div>
+    <div>
+      <h3><span class="ja">今日の天気（10月の平年）</span><span class="vi">THỜI TIẾT (TB tháng 10)</span></h3>
+      <div class="big">22–29°C ☀️🌦</div>
+      <div style="font-size:14px"><span class="ja">日中は日差しが強い。にわか雨の可能性あり。</span><span class="vi">Trưa nắng mạnh, có thể mưa rào ngắn.</span></div>
+      <div class="btns-row"><a class="btn" href="https://www.google.com/search?q=th%E1%BB%9Di+ti%E1%BA%BFt+Ninh+B%C3%ACnh+h%C3%B4m+nay">🌤 <span class="ja">今日の予報</span><span class="vi">Dự báo hôm nay</span></a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= TIMELINE ================= -->
+<section id="timeline" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">壱</div>
+    <div>
+      <h2><span class="ja">今日の行程</span><span class="vi">Lịch trình trong ngày</span></h2>
+      <p><span class="ja">🚗 移動 · 🍽 食事 · 🛶 小舟 · 🥾 登山。各ステップに「引率メモ（ドライバー・リーダー向け）」と「見どころ」を付けました。</span><span class="vi">🚗 di chuyển · 🍽 ăn · 🛶 thuyền · 🥾 leo núi. Mỗi chặng có "Ghi chú dẫn đoàn" (cho lái xe / trưởng nhóm) và "Điểm nhấn" cho thành viên.</span></p>
+    </div>
+  </div>
+
+
+  <ol class="tl">
+    <!-- 1 -->
+    <li class="tl-item" data-kind="meet" data-start="08:15" data-end="08:30"
+        data-ja="ホテルロビーに集合" data-vi="Tập trung ở sảnh khách sạn" data-dir="Grandiose Hotel & Spa, 11 Liễu Giai, Ba Đình, Hà Nội">
+      <div class="tl-icon">🏨</div>
+      <div class="tl-time">08:15 – 08:30<span class="tl-dur">15<span class="ja">分</span><span class="vi"> phút</span></span></div>
+      <h3><span class="ja">集合・出発準備</span><span class="vi">Tập trung & chuẩn bị</span></h3>
+      <div class="card">
+        <div class="facts"><span>📍 Grandiose Hotel &amp; Spa (Liễu Giai)</span></div>
+        <p class="ja">ロビー集合。スニーカー・帽子・水・現金を確認しましょう（<a href="#prep">持ち物リスト</a>）。</p>
+        <p class="vi">Tập trung ở sảnh. Kiểm tra giày thể thao, mũ, nước, tiền mặt (<a href="#prep">danh sách đồ</a>).</p>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">朝早くの集合、おつかれさまです。今日は長い一日なので、朝ごはんはしっかりと。車内で少し眠ってもOKです。</span><span class="vi">Tập trung sớm, vất vả rồi! Hôm nay là một ngày dài – nhớ ăn sáng đầy đủ, lên xe ngủ thêm chút cũng được.</span></div>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <ul class="vi">
+            <li>Điểm danh 2 xe. Mua sẵn nước suối cho cả đoàn.</li>
+            <li>Gọi xác nhận đặt bàn nhà hàng Thành Long: <a href="tel:0972162261">0972 162 261</a> (6 người, ~11:00, gọi sẵn set dê để ăn nhanh).</li>
+            <li>Kiểm tra tuyến 3 Tràng An hôm nay có chạy không (mùa nước lên có thể tạm dừng): BQL <a href="tel:+842293890217">(0229) 3890 217</a>.</li>
+          </ul>
+          <ul class="ja">
+            <li>2台の人数確認。全員分のミネラルウォーターを用意。</li>
+            <li>レストランThành Longに予約確認の電話（6名・11:00頃・ヤギのセットを事前注文して時短）。</li>
+            <li>チャンアン第3ルートが本日運航しているか確認（増水期は運休あり）。</li>
+          </ul>
+        </div>
+        <div class="btns-row"><a class="btn" href="https://maps.app.goo.gl/1vvyx2zfbM4LEgXf9">📍 Map</a></div>
+      </div>
+    </li>
+
+    <!-- 2 -->
+    <li class="tl-item" data-kind="car" data-start="08:30" data-end="10:30"
+        data-ja="ハノイ → ニンビン（高速道路 約100km）" data-vi="Hà Nội → Ninh Bình (cao tốc ~100 km)" data-dir="Nhà hàng Thành Long Vua dê Ninh Bình">
+      <div class="tl-icon">🚗</div>
+      <div class="tl-time">08:30 – 10:30<span class="tl-dur"><span class="ja">約2時間</span><span class="vi">~2 tiếng</span></span></div>
+      <h3><span class="ja">ハノイ → ニンビンへ</span><span class="vi">Hà Nội → Ninh Bình</span></h3>
+      <div class="card">
+        <div class="facts"><span>🛣 ~100 km</span><span>Pháp Vân – Cầu Giẽ – Ninh Bình</span><span>☕ <span class="ja">途中休憩 15分</span><span class="vi">nghỉ giữa đường 15'</span></span></div>
+        <p class="ja">市内を抜けて南へ。高速道路（Pháp Vân–Cầu Giẽ → Cầu Giẽ–Ninh Bình）を走ります。約1時間後（09:30頃）、高速道路上の<b>Duy Tiên サービスエリア（Km227、Phú Thứ IC付近）</b>でトイレ休憩15分。窓の外に石灰岩の山が見え始めたら、ニンビンはもうすぐ。</p>
+        <p class="vi">Ra khỏi nội thành, đi cao tốc Pháp Vân–Cầu Giẽ rồi Cầu Giẽ–Ninh Bình. Khoảng 1 tiếng sau (~09:30) nghỉ 15 phút tại <b>trạm dừng nghỉ Duy Tiên – Km 227</b> (ngay trên cao tốc, gần nút Phú Thứ). Khi thấy núi đá vôi hai bên đường là sắp tới Ninh Bình.</p>
+        <div class="see"><b>👀 <span class="ja">車内で読もう</span><span class="vi">ĐỌC TRÊN XE</span></b>
+          <span class="ja">移動中に <a href="#history">「千年の歴史」</a>・<a href="#culture">「1000年前の暮らし」</a> を読むと、午後の景色が何倍も面白くなります。さらに知りたい人は <a href="#reading">📖 読書リスト</a> へ。</span>
+          <span class="vi">Đọc phần <a href="#history">"Lịch sử ngàn năm"</a>, <a href="#culture">"Đời sống 1000 năm trước"</a> trên xe; muốn tìm hiểu thêm xem <a href="#reading">📖 danh sách bài đọc</a>.</span></div>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">2時間のドライブは、運転する人も乗る人も疲れます。途中のサービスエリアで<b>15分休憩</b>して、トイレ・ストレッチ・水分補給を。何より大切なのは<b>安全</b>。ドライバーが眠そうなら声をかけて、無理せず休みましょう。</span><span class="vi">Ngồi xe 2 tiếng, cả lái xe lẫn người ngồi đều mỏi. Dừng <b>15 phút</b> ở trạm nghỉ: đi vệ sinh, vươn vai, uống nước. Quan trọng nhất là <b>an toàn</b> – lái xe thấy buồn ngủ thì nghỉ thêm, đừng cố.</span></div>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <ul class="vi"><li>2 xe đi nối nhau; nếu lạc, hẹn gặp ở trạm dừng nghỉ Duy Tiên (Km 227).</li><li>Chiều đi: lối vào trạm ở <b>Km 226+880, rẽ phải</b> sau hầm Phú Thứ – đi theo biển "Trạm dừng nghỉ".</li><li>Không vào các trạm Bình An / 8668 / Thăng Long 2 / Chung Vổ: nằm trên nhánh nút Liêm Tuyền đi Nam Định, phải rời cao tốc.</li></ul>
+          <ul class="ja"><li>2台は連なって走行。はぐれたらDuy Tiên サービスエリア（Km227）で合流。</li></ul>
+        </div>
+        <div class="btns-row">
+          <a class="btn solid" data-dir="Nhà hàng Thành Long Vua dê Ninh Bình" data-from="Grandiose Hotel & Spa, 11 Liễu Giai, Ba Đình, Hà Nội">🧭 <span class="ja">ナビ（ホテル→レストラン）</span><span class="vi">Dẫn đường KS → nhà hàng</span></a>
+          <a class="btn" data-q="Trạm dừng nghỉ Duy Tiên cao tốc Cầu Giẽ Ninh Bình">☕ <span class="ja">休憩所</span><span class="vi">Trạm dừng nghỉ</span></a>
+        </div>
+      </div>
+    </li>
+
+    <!-- 3 -->
+    <li class="tl-item" data-kind="walk" data-start="10:30" data-end="11:00"
+        data-ja="（早く着いたら）ホアルー旧市街を散策" data-vi="(Nếu đến sớm) Dạo Phố cổ Hoa Lư" data-dir="Phố cổ Hoa Lư, Ninh Bình">
+      <div class="tl-icon">🏮</div>
+      <div class="tl-time">10:30 – 11:00<span class="tl-dur"><span class="ja">予備時間</span><span class="vi">thời gian dự phòng</span></span></div>
+      <h3><span class="ja">（余裕があれば）ホアルー古街さんぽ</span><span class="vi">(Nếu kịp) Dạo Phố cổ Hoa Lư</span></h3>
+      <div class="card">
+        <p class="ja">2022年にできた、10世紀・大瞿越の文化をモチーフにした新しい「古街」。麒麟山（Núi Kỳ Lân）のふもと、銀の寺（Chùa Bạc）の隣。午前は静かで写真向き。お店や灯籠が賑わうのは夕方〜夜です。</p>
+        <p class="vi">"Phố cổ" mới xây (mở năm 2022), lấy cảm hứng từ văn hoá Đại Cồ Việt thế kỷ X, dưới chân núi Kỳ Lân cạnh Chùa Bạc. Buổi sáng yên tĩnh, hợp chụp ảnh; hàng quán và đèn lồng sôi động từ chiều tối.</p>
+        <div class="mini-img"><img src="assets/phoco-hoalu-1.jpg" alt="Phố cổ Hoa Lư" loading="lazy"><img src="assets/phoco-hoalu-2.jpg" alt="Phố cổ Hoa Lư" loading="lazy"></div>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">2時間座りっぱなしの後は、少し歩いて体をほぐしましょう。古街を10〜20分ぶらぶらするだけで気分がすっきりして、お昼ごはんもおいしくなります。</span><span class="vi">Sau 2 tiếng ngồi xe, đi bộ dạo phố cổ 10–20 phút cho giãn người – thấy thoải mái, bữa trưa cũng ngon hơn.</span></div>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <span class="vi">Tuỳ chọn. Nếu đến muộn hơn 10:45 thì vào thẳng nhà hàng.</span><span class="ja">任意。10:45以降に到着ならレストランへ直行。</span></div>
+        <div class="btns-row"><a class="btn" data-q="Phố cổ Hoa Lư, Ninh Bình">📍 Map</a></div>
+      </div>
+    </li>
+
+    <!-- 4 -->
+    <li class="tl-item" data-kind="food" data-start="11:00" data-end="12:15"
+        data-ja="昼食：ニンビン名物ヤギ料理" data-vi="Ăn trưa: dê núi Ninh Bình" data-dir="Nhà hàng Thành Long Vua dê Ninh Bình">
+      <div class="tl-icon">🍽</div>
+      <div class="tl-time">11:00 – 12:15<span class="tl-dur">75<span class="ja">分</span><span class="vi"> phút</span></span></div>
+      <h3><span class="ja">昼食：名物「山ヤギ料理」</span><span class="vi">Ăn trưa: Dê núi Ninh Bình</span></h3>
+      <div class="card">
+        <div class="facts"><span>🍽 Nhà hàng Thành Long – Vua dê Ninh Bình</span><span>📍 04 Ngô Quyền</span><span>🕗 8:00–21:30</span></div>
+        <div class="mini-img">
+          <figure><img src="assets/wm-de-tai.jpg" alt="Dê tái chanh" loading="lazy"><figcaption>Dê tái chanh</figcaption></figure>
+          <figure><img src="assets/wm-food-de-ninhbinh.jpg" alt="Thịt dê Ninh Bình" loading="lazy"><figcaption><span class="ja">ヤギ肉＋葉っぱ＋タレ</span><span class="vi">Dê, lá cuốn, nước chấm</span></figcaption></figure>
+          <figure><img src="assets/wm-food-com-chay-meal.jpg" alt="Cơm cháy sốt dê" loading="lazy"><figcaption>Cơm cháy sốt dê</figcaption></figure>
+          <figure><img src="assets/wm-food-lau-de.jpg" alt="Lẩu dê" loading="lazy"><figcaption><span class="ja">ヤギ鍋（イメージ）</span><span class="vi">Lẩu dê (minh hoạ)</span></figcaption></figure>
+        </div>
+        <p class="ja">ヤギ一頭をレモン和え・炒め・焼き・鍋…とさまざまに味わい、名物の<b>おこげ「コムチャイ」</b>にヤギのあんをかけて。<a href="#food">→ なぜヤギなの？</a></p>
+        <p class="vi">Dê tái chanh, xào lăn, nướng, lẩu… cùng <b>cơm cháy sốt dê</b> trứ danh. <a href="#food">→ Vì sao là dê núi?</a></p>
+        <div class="see"><b>🍽 <span class="ja">外国人向けおすすめ注文（6名）</span><span class="vi">GỌI MÓN HỢP KHÁCH NƯỚC NGOÀI (6 người)</span></b>
+          <p class="ja" style="font-size:13.5px;margin:2px 0 4px">日本人旅行者のブログでは「ヤギは羊ほどクセがなくコリコリ」「でも好みは分かれる」「コムチャイは絶品」という声が多数。<b>よく火を通した料理を中心に、ヤギ以外の一皿も</b>入れました。</p>
+          <p class="vi" style="font-size:13.5px;margin:2px 0 4px">Theo các blog du lịch Nhật: dê ít mùi hơn cừu, giòn sần sật nhưng không phải ai cũng hợp; cơm cháy được khen nhất. Vì vậy chọn <b>món chín kỹ là chính, kèm một món không phải dê</b>.</p>
+          <table class="phr menu">
+            <tr><td>Cơm cháy sốt dê ×2<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">⭐ 日本人旅行者に一番人気。パリパリおこげにヤギのあんかけ</span><span class="vi">⭐ món được khách Nhật khen nhiều nhất</span></small></td><td style="text-align:right;white-space:nowrap">149k ×2</td></tr>
+            <tr><td>Dê áp chảo<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">焼肉のような鉄板焼き。日本人ブロガーのお気に入り</span><span class="vi">áp chảo – giống yakiniku, dễ ăn</span></small></td><td style="text-align:right;white-space:nowrap">270k</td></tr>
+            <tr><td>Dê nướng mỡ chài<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">網脂で包んで焼くのでジューシー。ジンギスカン感覚</span><span class="vi">nướng chín, mọng – kiểu Genghis Khan</span></small></td><td style="text-align:right;white-space:nowrap">230k</td></tr>
+            <tr><td>Dê chiên vừng<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">ごまをまぶした揚げ物。唐揚げ感覚で初心者向け</span><span class="vi">chiên vừng – như karaage, hợp người mới thử</span></small></td><td style="text-align:right;white-space:nowrap">220k</td></tr>
+            <tr><td>Dê xào lăn<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">レモングラス炒め。「辛さ控えめ（ít cay）」で注文</span><span class="vi">xào sả – dặn "ít cay"</span></small></td><td style="text-align:right;white-space:nowrap">220k</td></tr>
+            <tr><td>Cá quả hấp xì dầu<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">雷魚の醤油蒸し。ヤギが苦手な人の安心メニュー</span><span class="vi">cá hấp xì dầu – lựa chọn không phải dê</span></small></td><td style="text-align:right;white-space:nowrap">250k</td></tr>
+            <tr><td>Rau xào tỏi ×2 · đậu phụ · trứng rán<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">青菜のニンニク炒め・豆腐・目玉焼き</span><span class="vi">rau, đậu, trứng – món "an toàn"</span></small></td><td style="text-align:right;white-space:nowrap">~200k</td></tr>
+            <tr><td>Cơm tám ×3 + đồ uống<br><small style="font-weight:400;color:var(--muc-2)"><span class="ja">香り米・ソフトドリンク・ビール</span><span class="vi">cơm, nước ngọt, bia</span></small></td><td style="text-align:right;white-space:nowrap">~300k</td></tr>
+          </table>
+          <small><span class="ja">合計 約190万ドン（1人 約32万ドン）の目安。価格は店のWebメニュー（2025〜2026）より、変更の可能性あり。</span><span class="vi">Tổng ~1,9 triệu (~320k/người). Giá theo thực đơn web (2025–2026), có thể thay đổi.</span></small>
+          <p style="font-size:13.5px;margin:8px 0 0"><span class="ja">🌶 <b>チャレンジ枠（任意）：</b>名物「Dê tái chanh（レモン和え）」は<b>半生</b>なので、試したい人用に1皿だけ。鍋（Lẩu dê）は昼には重く時間がかかるので今回は省略。<b>生き血料理（tiết canh）は注文しない</b>。</span><span class="vi">🌶 <b>Món "thử thách" (tuỳ chọn):</b> dê tái chanh là thịt <b>tái</b> – gọi 1 đĩa cho ai muốn thử. Lẩu dê nặng và lâu, bỏ qua buổi trưa. <b>Không gọi tiết canh</b>.</span></p>
+          <table class="phr" style="margin-top:8px">
+            <tr><td>Không cay / Ít cay</td><td><span class="ja">辛くしないで／辛さ控えめ</span><span class="vi">không cay / ít cay</span></td></tr>
+            <tr><td>Không rau mùi</td><td><span class="ja">パクチー抜き</span><span class="vi">không rau mùi</span></td></tr>
+            <tr><td>Nấu chín kỹ</td><td><span class="ja">よく火を通して</span><span class="vi">nấu chín kỹ</span></td></tr>
+            <tr><td>Không đá</td><td><span class="ja">氷なし</span><span class="vi">không đá</span></td></tr>
+            <tr><td>Tính tiền</td><td><span class="ja">お会計</span><span class="vi">tính tiền</span></td></tr>
+          </table>
+          <p class="ja" style="font-size:13.5px;margin:6px 0 0">💡 食べ方：ヤギ肉をライスペーパーやイチジクの葉に香草と一緒に包み、味噌風のタレ（tương）につけて。</p>
+          <p class="vi" style="font-size:13.5px;margin:6px 0 0">💡 Hướng dẫn khách: cuốn dê với bánh đa/lá sung và rau thơm, chấm tương.</p>
+          <div class="btns-row">
+            <a class="btn" href="https://viethich.com/dung-pho-nui/">📝 <span class="ja">日本語レビュー（ヤギ料理店）</span><span class="vi">Review tiếng Nhật</span></a>
+            <a class="btn" href="https://note.com/sansansandesu/n/n8c82b7422c45">📝 <span class="ja">家族旅行記（note）</span><span class="vi">Nhật ký du lịch (note)</span></a>
+          </div>
+        </div>
+        <div class="see"><b>🙅 <span class="ja">ヤギが苦手な人へ — ヤギ以外のメニュー</span><span class="vi">KHÔNG ĂN ĐƯỢC DÊ? — MÓN KHÁC</span></b>
+          <ul class="clean ja">
+            <li>🐟 魚：雷魚（cá quả）の焼き・蒸し 250k、鯉（cá chép）のトマト煮 250k</li>
+            <li>🐷 豚：豚肉の干しエビ味噌炒め（thịt rang mắm tép）156k — ニンビン名物の発酵エビ味噌を使った食べやすい一品</li>
+            <li>🐸 カエル（ếch）150k、田ウナギ（lươn đồng）200k、牛肉料理 120〜200k</li>
+            <li>🥬 青菜炒め 45k、豆腐料理 49〜60k、目玉焼き 55k、チャーハン 75k、バナナの花サラダ 120k</li>
+          </ul>
+          <ul class="clean vi">
+            <li>🐟 Cá quả nướng/hấp xì dầu 250k, cá chép sốt cà chua 250k</li>
+            <li>🐷 Thịt rang mắm tép 156k (mắm tép Gia Viễn – đặc sản Ninh Bình)</li>
+            <li>🐸 Ếch 150k, lươn đồng 200k, các món bò 120–200k</li>
+            <li>🥬 Rau xào 45k, đậu phụ 49–60k, trứng rán 55k, cơm rang 75k, nộm hoa chuối 120k</li>
+          </ul>
+          <small><span class="ja">※鶏肉料理はメニューにありません。</span><span class="vi">※ Thực đơn không có món gà.</span></small>
+        </div>
+        <p style="font-size:13.5px"><span class="ja">候補2：Dê núi Tràng An（ホアルー古街内）</span><span class="vi">Phương án 2: Dê núi Tràng An (trong Phố cổ Hoa Lư)</span></p>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <ul class="vi"><li>Gọi trước hotline đặt bàn 6 người và <b>đặt trước món theo bảng gợi ý</b> (ưu tiên món chín kỹ, dặn ít cay) để lên món ngay khi tới.</li><li><b>Rời nhà hàng lúc 12:15</b> để kịp thuyền 12:45 – thanh toán trước 12:10.</li><li>Nhắc cả đoàn <b>đi vệ sinh trước khi lên thuyền</b> (3 tiếng trên sông).</li><li>Món có tiết canh / rượu tiết: hỏi trước, không ép khách Nhật.</li></ul>
+          <ul class="ja"><li>12:15出発厳守（会計は12:10までに）。</li><li>乗船前に必ずトイレへ（約3時間の舟旅）。</li></ul>
+        </div>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">ヤギ料理は好みが分かれます。口に合わなくても大丈夫。ヤギ以外の料理を頼んでも、<b>近くの別のお店に変えても</b>OKです。食べたいものは遠慮なく伝えてください。みんなで相談して、全員が気持ちよく食べられる場所を選びましょう。</span><span class="vi">Dê núi có thể không hợp khẩu vị – không sao cả. Có thể gọi món khác, hoặc <b>cả nhóm cùng đổi sang quán gần đó</b>. Cứ thoải mái nói mình muốn ăn gì; cùng nhau chọn chỗ để ai cũng ăn ngon miệng, thấy dễ chịu.</span></div>
+        <div class="btns-row">
+          <a class="btn solid" data-dir="Nhà hàng Thành Long Vua dê Ninh Bình">🧭 <span class="ja">ナビ</span><span class="vi">Dẫn đường</span></a>
+          <a class="btn" href="https://nhahangthanhlongninhbinh.com.vn/">🌐 Website</a>
+          <a class="btn" href="https://nhahangthanhlongninhbinh.com.vn/thuc-don/">📋 <span class="ja">メニュー</span><span class="vi">Thực đơn</span></a>
+          <a class="btn" href="tel:0972162261">📞 0972 162 261</a>
+          <a class="btn" data-q="Dê núi Tràng An Phố cổ Hoa Lư Ninh Bình">📍 <span class="ja">候補2</span><span class="vi">Phương án 2</span></a>
+          <a class="btn" data-q="nhà hàng gần Phố cổ Hoa Lư, Ninh Bình">🍜 <span class="ja">近くの他のお店</span><span class="vi">Quán ăn gần đây</span></a>
+        </div>
+      </div>
+    </li>
+
+    <!-- 5 -->
+    <li class="tl-item" data-kind="car" data-start="12:15" data-end="12:45"
+        data-ja="チャンアン乗船場へ移動・チケット購入" data-vi="Đi bến thuyền Tràng An & mua vé" data-dir="Bến thuyền Tràng An, Trường Yên, Ninh Bình">
+      <div class="tl-icon">🎫</div>
+      <div class="tl-time">12:15 – 12:45<span class="tl-dur">30<span class="ja">分</span><span class="vi"> phút</span></span></div>
+      <h3><span class="ja">チャンアン乗船場へ・チケット購入</span><span class="vi">Đến bến thuyền Tràng An · mua vé</span></h3>
+      <div class="card">
+        <div class="facts"><span>🚗 8–9 km · 15–20<span class="ja">分</span><span class="vi">'</span></span><span>🎫 300.000đ/<span class="ja">人</span><span class="vi">người</span></span><span>🛶 4–5<span class="ja">人/艘</span><span class="vi"> người/thuyền</span></span></div>
+        <figure><img src="assets/trangan-wharf.jpg" alt="Bến thuyền Tràng An" loading="lazy"><figcaption><span class="ja">チャンアン乗船場</span><span class="vi">Bến thuyền Tràng An</span></figcaption></figure>
+        <p class="ja">乗船券は舟・漕ぎ手・保険込み。窓口で「第3ルート（Tuyến 3）」を選びます。救命胴衣の着用は必須です。</p>
+        <p class="vi">Vé đã gồm thuyền, người chèo và bảo hiểm. Chọn <b>Tuyến 3</b> tại quầy. Bắt buộc mặc áo phao.</p>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">ここから約3時間は舟の上。乗る前に<b>トイレを済ませ</b>、水を1本、<b>帽子か日傘</b>を手元に。準備ができていると、舟の上でゆったり過ごせます。</span><span class="vi">Sắp tới là ~3 tiếng trên thuyền. <b>Đi vệ sinh trước</b>, cầm 1 chai nước, <b>mũ hoặc ô</b> – chuẩn bị xong là có thể thư thái tận hưởng.</span></div>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <ul class="vi"><li>Mua vé tại quầy hoặc online trước để khỏi xếp hàng (<a href="https://muave.disantrangan.vn/home/vi">muave.disantrangan.vn</a>).</li><li>Cả đoàn 6 người (gồm 2 lái xe) <b>xin đi chung 1 thuyền</b>. Nếu quầy vé không cho → tách 2 thuyền theo hướng dẫn của quầy, mỗi thuyền có 1 người nói tiếng Việt.</li><li>Để đồ không cần thiết trong xe; mang theo nước + mũ.</li><li>Ghi nhớ vị trí đỗ xe; cả đoàn quay lại bãi xe ~15:45.</li></ul>
+          <ul class="ja"><li>ドライバー2名も含めた6名で<b>1艘に乗船</b>を希望。不可の場合は窓口の案内に従い2艘に分乗（各艇にベトナム語が話せる人を1人）。</li><li>不要な荷物は車に置き、水と帽子だけ持参。</li></ul>
+        </div>
+        <div class="btns-row">
+          <a class="btn solid" data-dir="Bến thuyền Tràng An, Trường Yên, Ninh Bình">🧭 <span class="ja">ナビ</span><span class="vi">Dẫn đường</span></a>
+          <a class="btn" href="https://muave.disantrangan.vn/home/vi">🎫 <span class="ja">オンライン購入</span><span class="vi">Mua vé online</span></a>
+          <a class="btn" href="https://fptshop.com.vn/tin-tuc/for-gamers/mua-ve-trang-an-online-193459">📖 <span class="ja">購入方法</span><span class="vi">Hướng dẫn mua</span></a>
+        </div>
+      </div>
+    </li>
+
+    <!-- 6 -->
+    <li class="tl-item" data-kind="boat" data-start="12:45" data-end="15:45"
+        data-ja="チャンアン第3ルート 小舟の旅（約3時間）" data-vi="Thuyền Tràng An tuyến 3 (~3 tiếng)" data-dir="Bến thuyền Tràng An, Trường Yên, Ninh Bình">
+      <div class="tl-icon">🛶</div>
+      <div class="tl-time">12:45 – 15:45<span class="tl-dur"><span class="ja">約3時間</span><span class="vi">~3 tiếng</span></span></div>
+      <h3><span class="ja">チャンアン 第3ルート — 小舟で洞窟をくぐる</span><span class="vi">Tràng An tuyến 3 — thuyền xuyên hang</span></h3>
+      <div class="card">
+        <div class="facts"><span>🛶 <span class="ja">手漕ぎ舟</span><span class="vi">thuyền chèo tay</span></span><span>🕳 <span class="ja">洞窟 3</span><span class="vi">3 hang</span></span><span>⛩ <span class="ja">上陸 3回</span><span class="vi">lên bờ 3 lần</span></span><span>🌏 UNESCO 2014</span></div>
+        <div class="psteps">
+<figure><span class="n">1</span><img src="assets/wm-ta-den-trinh.jpg" alt="Đền Trình" loading="lazy"><figcaption><span class="ja"><b>Đền Trình</b> 最初の上陸地。舟を岸につけ、参拝して「到着の報告」を。</span><span class="vi"><b>Đền Trình</b> Điểm lên bờ đầu tiên – thắp hương "trình báo" trước khi vào vùng núi.</span><small>Bùi Thế Tâm, CC BY-SA 3.0</small></figcaption></figure>
+<figure><span class="n">2</span><img src="assets/wm-ta-cave-light.jpg" alt="Trong hang" loading="lazy"><figcaption><span class="ja"><b>洞窟の中</b> 電灯に照らされた鍾乳石。天井が低い所では頭を下げて。</span><span class="vi"><b>Trong hang</b> Nhũ đá dưới ánh đèn; chỗ trần thấp nhớ cúi đầu.</span><small>Jakub Hałun, CC BY 4.0</small></figcaption></figure>
+<figure><span class="n">3</span><img src="assets/wm-ta-rower.jpg" alt="Người chèo đò" loading="lazy"><figcaption><span class="ja"><b>漕ぎ手さん</b> 多くは地元の村の女性。静かな水面をゆっくり進みます。</span><span class="vi"><b>Người chèo đò</b> Phần lớn là phụ nữ làng quanh đây, chèo chậm rãi trên mặt nước tĩnh.</span><small>Jakub Hałun, CC BY 4.0</small></figcaption></figure>
+<figure><span class="n">4</span><img src="assets/wm-ta-vu-lam.jpg" alt="Hành cung Vũ Lâm" loading="lazy" style="object-position:center 65%"><figcaption><span class="ja"><b>武林行宮</b> 断崖に囲まれた水上の楼閣。陳朝の王たちの隠れ里。</span><span class="vi"><b>Hành cung Vũ Lâm</b> Thủy đình giữa vách núi – nơi ẩn cư của các vua Trần.</span><small>NKSTTSSHNVN, CC BY-SA 4.0</small></figcaption></figure>
+        </div>
+        <ol class="stops">
+          <li><span class="ja">乗船場 出発</span><span class="vi">Rời bến thuyền</span></li>
+          <li class="land">⛩ <b>Đền Trình</b><span class="ja">（別名 Phủ Đột）— 上陸。</span><span class="vi"> (Phủ Đột) — lên bờ.</span>
+            <div class="ja" style="font-size:13.5px">「Trình」は「報告する」の意味。聖域に入る前に神々へ到着を告げる社です。千年以上の歴史を持つと伝わり、建物は丁朝の「丁」の字の形。祀られているのは<b>丁朝を支えた四人の重臣「丁朝の四柱」</b>（Đinh Điền・Nguyễn Bặc・Lưu Cơ・Trịnh Tú）。門前には幸運の象徴・<b>石の鯉</b>の像があり、水中には本物の鯉も泳いでいます。</div>
+            <div class="vi" style="font-size:13.5px">"Trình" là trình báo thần linh trước khi vào vùng đất thiêng. Tương truyền hơn 1000 năm tuổi, kiến trúc hình chữ Đinh (丁). Thờ <b>"Tứ trụ triều Đinh"</b>: Đinh Điền, Nguyễn Bặc, Lưu Cơ, Trịnh Tú. Trước đền có đôi <b>cá chép đá</b> – biểu tượng may mắn – và cá chép thật dưới nước.</div></li>
+          <li>🕳 <b>Hang Đột</b> — <span class="ja"><b>全長1,000m以上、チャンアンで最も長く美しい洞窟</b>とされ、第3ルートのハイライト。天井は高めで、さまざまな形の鍾乳石が続きます。抜けるのに約30分。</span><span class="vi"><b>dài hơn 1.000 m</b>, được xem là hang dài và đẹp nhất Tràng An – điểm nhấn của tuyến 3. Trần khá cao, nhũ đá đủ hình dáng; đi hết ~30 phút.</span></li>
+          <li>🕳 <b>Hang Vân（Hang Mây）</b> — <span class="ja">「雲の洞窟」。Vân（雲）は漢越語、Mâyは日常語で、どちらも「雲」。全長約900m。洞窟の前後は<b>「雲の谷（Thung Mây）」</b>と呼ばれる、峰に囲まれた約12,000㎡の水の盆地です。</span><span class="vi">Vân (雲) và Mây cùng nghĩa là mây. Dài gần 900 m, nằm trong <b>Thung Mây</b> – thung nước ~12.000 m² bao quanh bởi núi đá; ánh sáng trong hang tạo cảm giác mờ ảo như mây.</span></li>
+          <li class="land">⛩ <b>Đền Suối Tiên</b> — <span class="ja">上陸。雄王（フンヴオン）時代の将軍<b>貴明大王（Quý Minh Đại vương）</b>を祀る。Sào Khê川の上流にあり、丁先皇即位1050年（2018年）を記念して、丁・鉄木（lim）など4種の銘木で再建されました。</span><span class="vi">lên bờ. Thờ <b>Đức thánh Quý Minh Đại vương</b> – tướng thời Hùng Vương. Ở thượng nguồn sông Sào Khê; dựng lại năm 2018 dịp kỷ niệm 1050 năm Đinh Tiên Hoàng lên ngôi, bằng 4 loại gỗ quý đinh, lim, sến, táu.</span></li>
+          <li>⛰ <b>Núi Địa Linh · Núi Kim Quy</b> — <span class="ja">洞窟ではなく<b>水面から垂直にそびえる塔のような峰</b>。蓮の花が開いたような形とも。Kim Quy は「金の亀」。「陸のハロン湾」と呼ばれる景色はまさにここ。</span><span class="vi">không phải hang mà là <b>núi đá dựng đứng giữa nước</b>; Địa Linh được ví như đoá sen nở. Kim Quy = rùa vàng. Đây chính là khung cảnh "Hạ Long trên cạn".</span></li>
+          <li>🕳 <b>Hang Đại</b> — <span class="ja">長さ約150m。広々として風通しのよい洞窟。</span><span class="vi">dài ~150 m, rộng và thoáng.</span></li>
+          <li class="land">🏯 <b>Hành cung Vũ Lâm</b><span class="ja">（武林行宮）— 上陸。</span><span class="vi"> — lên bờ.</span>
+            <div class="ja" style="font-size:13.5px">1258年にモンゴル軍を初めて退けた後、<b>陳太宗</b>が築いた軍事拠点の離宮。1285年の第2次モンゴル戦争でも戦いの舞台になったと伝わります。陳太宗は晩年ここ（太微庵）で仏道に入り、のちに孫の<b>陳仁宗</b>も退位後ここで修行してから、北部のイエントゥ山で「竹林禅派」を開きました。舟でしか行けない、王たちの隠れ里です。</div>
+            <div class="vi" style="font-size:13.5px">Căn cứ quân sự do <b>Trần Thái Tông</b> lập sau chiến thắng Mông Cổ lần 1 (1258); gắn với kháng chiến chống Nguyên lần 2 (1285). Vua Trần Thái Tông cuối đời tu ở Am Thái Vi; <b>Trần Nhân Tông</b> sau khi nhường ngôi cũng tu ở đây trước khi lên Yên Tử lập Thiền phái Trúc Lâm. Nay còn Đền Thái Vi, chùa Khai Phúc (chùa Hành Cung).</div></li>
+          <li><span class="ja">（航路により）キングコングのロケ村が見えることも — 公式の第3ルートには含まれないため、漕ぎ手に聞いてみて。</span><span class="vi">(Tuỳ luồng) phim trường Kong – không nằm trong lộ trình chính thức tuyến 3, hỏi người chèo.</span></li>
+          <li><span class="ja">乗船場に帰着</span><span class="vi">Về bến</span></li>
+        </ol>
+        <p style="font-size:13px;color:var(--muc-2);margin-top:0"><span class="ja">第3ルート＝「洞窟3つ＋霊所3つ」。洞窟の合計は約2km。トイレや飲み物は上陸地点で探せることが多いですが、乗船前に済ませておくのが安心です。</span><span class="vi">Tuyến 3 = "3 hang + 3 điểm tâm linh", tổng chiều dài hang ~2 km. Nên đi vệ sinh, mua nước trước khi lên thuyền.</span></p>
+        <div class="see"><b>👀 <span class="ja">見どころ</span><span class="vi">ĐIỂM NHẤN</span></b>
+          <span class="ja">漕ぎ手の多くは近くの村の女性たち。洞窟内は天井が低い所があるので、頭を下げ、手を舟の外に出さないように。<a href="#trangan">→ チャンアンの詳しい話</a></span>
+          <span class="vi">Người chèo phần lớn là phụ nữ các làng quanh đây. Trong hang có chỗ trần rất thấp: cúi đầu, không thò tay ra ngoài. <a href="#trangan">→ Tìm hiểu thêm về Tràng An</a></span></div>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <ul class="vi"><li>Hỏi người chèo: "Tuyến này có qua phim trường Kong không?"</li><li>Tip người chèo tuỳ tâm, tham khảo 50–100k/thuyền.</li></ul>
+          <ul class="ja"><li>チップは任意（目安：1艘50,000〜100,000ドン）。</li></ul>
+        </div>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">3時間座っていると腰やお尻が疲れてきます。上陸ポイントでは歩いて伸びを。外は日差しが強いので帽子・日傘を、洞窟の中はひんやり——その差も楽しんで。漕ぎ手さんに「Cảm ơn!（カム オン）」と声をかけると、きっと笑顔が返ってきます。</span><span class="vi">Ngồi thuyền lâu sẽ mỏi lưng – mỗi lần lên bờ hãy đi lại, vươn vai. Ngoài trời nắng thì đội mũ, che ô; vào hang lại mát lạnh. Đừng quên cảm ơn cô lái đò nhé.</span></div>
+        <div class="btns-row">
+          <a class="btn" href="https://whc.unesco.org/en/list/1438">🌏 UNESCO</a>
+          <a class="btn" href="https://trangandanhthang.vn">🌐 Tràng An</a>
+          <a class="btn" data-q="Hành cung Vũ Lâm, Tràng An, Ninh Bình">📍 Vũ Lâm</a>
+        </div>
+      </div>
+    </li>
+
+    <!-- 7 -->
+    <li class="tl-item" data-kind="car" data-start="15:45" data-end="16:05"
+        data-ja="ハンムアへ移動（判断ポイント）" data-vi="Đi Hang Múa (điểm quyết định)" data-dir="Hang Múa, Ninh Xuân, Ninh Bình">
+      <div class="tl-icon">🚗</div>
+      <div class="tl-time">15:45 – 16:05<span class="tl-dur">~15–20<span class="ja">分</span><span class="vi">'</span></span></div>
+      <h3><span class="ja">ハンムアへ移動 ⚑ 判断ポイント</span><span class="vi">Sang Hang Múa ⚑ Điểm quyết định</span></h3>
+      <div class="card">
+        <div class="facts"><span>🚗 6–7 km</span></div>
+        <div class="callout">
+          <span class="ja"><b>行く／スキップの判断：</b>16:15以降の到着になる・雨・体調不良の人がいる → ハンムアはスキップしてハノイへ。</span>
+          <span class="vi"><b>Đi hay bỏ?</b> Nếu đến sau 16:15, trời mưa, hoặc có người mệt → bỏ Hang Múa, về thẳng Hà Nội.</span>
+        </div>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">舟のあとは疲れが出てくる頃。体調は正直に伝えてください。<b>登らないのも立派な選択</b>です。ふもとで休んでいても、旅は十分楽しめます。</span><span class="vi">Sau 3 tiếng trên thuyền, ai mệt cứ nói thật. <b>Không leo cũng là lựa chọn tốt</b> – nghỉ dưới chân núi vẫn trọn vẹn chuyến đi.</span></div>
+        <div class="btns-row"><a class="btn solid" data-dir="Hang Múa, Ninh Xuân, Ninh Bình">🧭 <span class="ja">ナビ</span><span class="vi">Dẫn đường</span></a></div>
+      </div>
+    </li>
+
+    <!-- 8 -->
+    <li class="tl-item" data-kind="hike" data-start="16:05" data-end="17:30"
+        data-ja="ハンムア登山・夕景（任意）" data-vi="Leo Hang Múa ngắm hoàng hôn (tuỳ chọn)" data-dir="Hang Múa, Ninh Xuân, Ninh Bình">
+      <div class="tl-icon">🥾</div>
+      <div class="tl-time">16:05 – 17:30<span class="tl-dur"><span class="ja">約1.5時間</span><span class="vi">~1,5 tiếng</span></span> <span class="tag green"><span class="ja">任意</span><span class="vi">tuỳ chọn</span></span></div>
+      <h3><span class="ja">ハンムア — 486段の先の絶景</span><span class="vi">Hang Múa — 486 bậc đá lên đỉnh</span></h3>
+      <div class="card">
+        <div class="facts"><span>🎫 150.000đ</span><span>🪜 486<span class="ja">段</span><span class="vi"> bậc</span></span><span>⬆ 20–45<span class="ja">分</span><span class="vi">'</span></span><span>⬇ 15–20<span class="ja">分</span><span class="vi">'</span></span><span>🌇 <span class="ja">日没 約17:35</span><span class="vi">hoàng hôn ~17:35</span></span></div>
+        <div class="psteps">
+<figure><span class="n">1</span><img src="assets/wm-hm-steps-up.jpg" alt="Bắt đầu leo" loading="lazy" style="object-position:center 70%"><figcaption><span class="ja"><b>登り始め</b> 岩山に刻まれた石段を一段ずつ。最初が一番きついので、ゆっくりと。</span><span class="vi"><b>Bắt đầu leo</b> Bậc đá men theo núi; đoạn đầu dốc nhất, cứ đi chậm.</span><small>Shyamal, CC BY-SA 4.0</small></figcaption></figure>
+<figure><span class="n">2</span><img src="assets/wm-hm-peak-path.jpg" alt="Thấy đỉnh tháp" loading="lazy"><figcaption><span class="ja"><b>頂上が見えてくる</b> 小塔の立つ峰へ、稜線沿いの道。眼下に田んぼが広がり始めます。</span><span class="vi"><b>Thấy đỉnh tháp</b> Đường men sống núi lên đỉnh có tháp nhỏ; ruộng đồng hiện ra bên dưới.</span><small>lumoplank, CC0</small></figcaption></figure>
+<figure><span class="n">3</span><img src="assets/wm-hm-summit.jpg" alt="Lên tới đỉnh" loading="lazy"><figcaption><span class="ja"><b>頂上に到着</b> 岩の上から360°。風が気持ちいい場所。足元が狭いので注意。</span><span class="vi"><b>Lên tới đỉnh</b> Tầm nhìn 360°, gió mát; đá hẹp, cẩn thận bước chân.</span><small>Shyamal, CC BY-SA 4.0</small></figcaption></figure>
+<figure><span class="n">4</span><img src="assets/wm-hangmua-view.jpg" alt="Toàn cảnh Tam Cốc" loading="lazy"><figcaption><span class="ja"><b>タムコックを一望</b> 蛇行するゴードン川と石灰岩の峰。登ったご褒美の景色。</span><span class="vi"><b>Toàn cảnh Tam Cốc</b> Sông Ngô Đồng uốn lượn giữa núi đá – phần thưởng sau 486 bậc.</span><small>Shyamal, CC BY-SA 4.0</small></figcaption></figure>
+        </div>
+        <ul class="clean ja">
+          <li>16:05 入場・登山開始 → 16:30〜16:45 山頂（分かれ道の右＝龍の像、左＝観音像）</li>
+          <li>山頂で20分ほど。夕方の光で石灰岩の峰が金色に。</li>
+          <li>17:10頃下山開始 → 17:30 駐車場</li>
+        </ul>
+        <ul class="clean vi">
+          <li>16:05 vào cổng, bắt đầu leo → 16:30–16:45 lên đỉnh (ngã rẽ: phải – tượng rồng, trái – tượng Quan Âm).</li>
+          <li>Ở đỉnh ~20 phút, nắng chiều nhuộm vàng núi đá.</li>
+          <li>~17:10 xuống → 17:30 về bãi xe.</li>
+        </ul>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <ul class="vi"><li>Người không leo có thể nghỉ ở quán cà phê/khu hồ sen dưới chân núi.</li><li>Bậc đá dốc và trơn khi mưa – đi chậm, xuống trước 17:15 để còn ánh sáng.</li></ul>
+          <ul class="ja"><li>登らない人はふもとのカフェで休憩可。</li><li>石段は急で雨だと滑りやすい。17:15までに下山開始。</li></ul>
+        </div>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">自分のペースで大丈夫。ときどき振り返ると、登るほどに景色が広がっていきます。息が上がったら立ち止まって水を一口。頂上の風は格別です。</span><span class="vi">Leo theo nhịp của mình. Thỉnh thoảng quay lại nhìn – càng lên cao cảnh càng mở ra. Mệt thì dừng, uống ngụm nước. Gió trên đỉnh rất đáng công leo.</span></div>
+        <div class="btns-row">
+          <a class="btn solid" data-dir="Hang Múa, Ninh Xuân, Ninh Bình">🧭 <span class="ja">ナビ</span><span class="vi">Dẫn đường</span></a>
+          <a class="btn" href="#hangmua">📖 <span class="ja">ハンムアの話</span><span class="vi">Về Hang Múa</span></a>
+        </div>
+      </div>
+    </li>
+
+    <!-- 9 -->
+    <li class="tl-item" data-kind="car" data-start="17:30" data-end="19:45"
+        data-ja="ハノイへ帰路（解散）" data-vi="Về Hà Nội (giải tán)" data-dir="Grandiose Hotel & Spa, 11 Liễu Giai, Ba Đình, Hà Nội">
+      <div class="tl-icon">🌙</div>
+      <div class="tl-time">17:30 – 19:45<span class="tl-dur"><span class="ja">約2〜2.5時間</span><span class="vi">~2–2,5 tiếng</span></span></div>
+      <h3><span class="ja">ハノイへ帰路・解散</span><span class="vi">Về Hà Nội · giải tán</span></h3>
+      <div class="card">
+        <div class="facts"><span>🛣 ~100 km</span><span>🚦 <span class="ja">土曜夕方の渋滞あり</span><span class="vi">tối thứ Bảy dễ tắc</span></span></div>
+        <p class="ja">土曜の夕方はハノイ入口（Pháp Vân / Giải Phóng）が混みやすく、ホテル着は<b>19:30〜20:00頃</b>の見込み。お疲れさまでした！</p>
+        <p class="vi">Tối thứ Bảy cửa ngõ Pháp Vân / Giải Phóng hay tắc, dự kiến về khách sạn <b>19:30–20:00</b>. Cảm ơn mọi người!</p>
+        <div class="feel"><b>💭 <span class="ja">いまのあなたへ</span><span class="vi">DÀNH CHO BẠN LÚC NÀY</span></b><span class="ja">一日おつかれさまでした。帰りの車内は写真を見返したり、眠ったり。ドライバーは一日運転して<b>一番疲れている時間</b>です。眠くなったら迷わず休憩を。最後まで安全第一で。</span><span class="vi">Một ngày dài rồi – trên xe xem lại ảnh hoặc ngủ một giấc. Lúc này lái xe <b>mệt nhất</b>: buồn ngủ thì dừng nghỉ ngay. An toàn đến phút cuối.</span></div>
+        <div class="leader"><b>🚩 <span class="ja">引率メモ</span><span class="vi">GHI CHÚ DẪN ĐOÀN</span></b>
+          <span class="vi">Nếu cần nghỉ chiều về: <b>trạm dừng nghỉ Duy Tiên – hướng Bắc</b> (Km 227+300, rẽ phải theo biển báo), ~40 phút sau khi rời Hang Múa – nên dừng ở đây trước khi vào đoạn tắc Pháp Vân. Nhắn nhóm giờ dự kiến tới nơi khi rời trạm.</span><span class="ja">帰りに休憩する場合は<b>Duy Tiên サービスエリア（ハノイ方面）</b>へ。ハンムアから約40分。ハノイ入口の渋滞前に済ませておくと安心。</span><div class="btns-row"><a class="btn" data-q="Trạm dừng nghỉ Duy Tiên - Hướng Bắc">☕ <span class="ja">休憩所（帰り）</span><span class="vi">Trạm nghỉ chiều về</span></a></div></div>
+        <div class="btns-row"><a class="btn solid" data-dir="Grandiose Hotel & Spa, 11 Liễu Giai, Ba Đình, Hà Nội">🧭 <span class="ja">ホテルへナビ</span><span class="vi">Dẫn đường về KS</span></a></div>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<svg class="karst" viewBox="0 0 600 46" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 46 L0 34 C20 30 26 8 40 10 C52 12 54 30 66 30 C78 30 82 2 98 4 C112 6 110 28 124 30 C140 32 146 18 158 18 C172 18 172 36 188 36 C200 36 206 6 222 8 C238 10 236 32 252 32 C266 32 270 20 282 20 C296 20 298 36 314 34 C328 32 330 0 348 2 C366 4 362 30 378 32 C392 34 398 14 412 14 C426 14 428 34 442 34 C456 34 462 10 478 12 C494 14 490 34 506 34 C520 34 524 22 538 22 C552 22 556 36 570 34 C584 32 588 20 600 22 L600 46 Z"/></svg>
+
+<!-- ================= HISTORY ================= -->
+<section id="history" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">弐</div>
+    <div>
+      <h2><span class="ja">千年の物語 — なぜホアルー、なぜハノイへ？</span><span class="vi">Chuyện ngàn năm — Vì sao Hoa Lư, vì sao dời về Thăng Long?</span></h2>
+      <p><span class="ja">ベトナム最初の統一王朝は、なぜこの山の中に都を置き、42年後になぜ去ったのか。</span><span class="vi">Vì sao triều đại thống nhất đầu tiên đóng đô giữa núi đá, và vì sao 42 năm sau lại rời đi?</span></p>
+    </div>
+  </div>
+
+  <div class="grid c2">
+    <figure><img src="assets/wm-hoalu-gate.jpg" alt="Cổng đền vua Đinh, Hoa Lư" loading="lazy"><figcaption><span class="ja">ホアルー古都・丁先皇廟の門。背後に天然の城壁となった石灰岩の山</span><span class="vi">Cổng đền vua Đinh, Cố đô Hoa Lư – phía sau là núi đá "tường thành tự nhiên"</span> · Richard Mortel, CC BY 2.0</figcaption></figure>
+    <figure><img src="assets/wm-den-dinh.jpg" alt="Đền vua Đinh Tiên Hoàng" loading="lazy"><figcaption><span class="ja">丁先皇（ディン・ティエン・ホアン）廟</span><span class="vi">Đền vua Đinh Tiên Hoàng</span> · Jean-Pierre Dalbéra, CC BY 2.0</figcaption></figure>
+  </div>
+
+  <h3 style="margin:26px 0 8px;font-size:19px"><span class="ja">📜 年表 — 日本と並べて</span><span class="vi">📜 Niên biểu — đặt cạnh lịch sử Nhật Bản</span></h3>
+  <ol class="chron">
+    <li><div class="y">938</div><div><span class="ja"><b>白藤江（バクダン江）の戦い。</b>呉権（ゴー・クエン）が南漢軍を破り、約1000年続いた中国支配が終わる。</span><span class="vi"><b>Chiến thắng Bạch Đằng.</b> Ngô Quyền đánh bại quân Nam Hán, chấm dứt ~1000 năm Bắc thuộc.</span><span class="jp">935–940 平将門の乱</span></div></li>
+    <li><div class="y">944<br><small>–968</small></div><div><span class="ja"><b>十二使君の乱。</b>国が12人の豪族に分裂し、20年以上の内乱へ。</span><span class="vi"><b>Loạn 12 sứ quân.</b> Đất nước chia cắt bởi 12 thế lực cát cứ hơn 20 năm.</span></div></li>
+    <li class="key"><div class="y">968</div><div><span class="ja"><b>丁部領（ディン・ボ・リン）が全国を統一</b>し皇帝に（丁先皇）。国号を<b>「大瞿越（ダイコーベト）」</b>とし、故郷<b>ホアルー</b>を都に。</span><span class="vi"><b>Đinh Bộ Lĩnh dẹp loạn, lên ngôi</b> (Đinh Tiên Hoàng), đặt quốc hiệu <b>Đại Cồ Việt</b>, đóng đô ở quê hương <b>Hoa Lư</b>.</span><span class="jp">平安時代中期・藤原氏の摂関政治のころ</span></div></li>
+    <li><div class="y">980</div><div><span class="ja">丁先皇の暗殺（979）後、将軍<b>黎桓（レ・ホアン）</b>が即位＝前黎朝。翌981年、宋の大軍を撃退。</span><span class="vi">Sau khi vua Đinh bị ám sát (979), <b>Lê Hoàn</b> lên ngôi – nhà Tiền Lê; năm 981 đánh tan quân Tống.</span><span class="jp">1000年頃 清少納言『枕草子』</span></div></li>
+    <li><div class="y">1009</div><div><span class="ja"><b>李公蘊（リ・コン・ウアン）</b>がホアルーで即位＝李朝。</span><span class="vi"><b>Lý Công Uẩn</b> lên ngôi tại Hoa Lư – mở đầu nhà Lý.</span><span class="jp">1008年頃 紫式部『源氏物語』</span></div></li>
+    <li class="key"><div class="y">1010</div><div><span class="ja"><b>「遷都の詔」</b>を発し、都を大羅（ダイラ）へ。<b>「昇龍（タンロン）」</b>と命名＝今のハノイ。李朝は216年続く長期政権に。</span><span class="vi">Ban <b>Chiếu dời đô</b>, chuyển kinh đô ra Đại La, đặt tên <b>Thăng Long</b> – Hà Nội ngày nay. Nhà Lý kéo dài 216 năm.</span><span class="jp">1016 藤原道長が摂政に</span></div></li>
+    <li><div class="y">1258<br><small>–1288</small></div><div><span class="ja">陳（チャン）朝がモンゴル（元）の侵攻を<b>3度</b>撃退。チャンアンの奥にある「武林行宮」は陳朝ゆかりの地。</span><span class="vi">Nhà Trần <b>3 lần</b> đánh thắng quân Mông–Nguyên. Hành cung Vũ Lâm trong Tràng An gắn với nhà Trần.</span><span class="jp">1274・1281 元寇（文永・弘安の役）——同じ敵と戦った隣人</span></div></li>
+    <li class="key"><div class="y">2010</div><div><span class="ja"><b>10月10日</b>、ハノイで「昇龍・ハノイ千年祭」。同年、タンロン遺跡が世界遺産に。</span><span class="vi"><b>10/10</b>: Đại lễ 1000 năm Thăng Long – Hà Nội. Cùng năm, Hoàng thành Thăng Long thành Di sản Thế giới.</span></div></li>
+    <li><div class="y">2014</div><div><span class="ja"><b>チャンアン景観複合体</b>がベトナム初の<b>世界複合遺産</b>（自然＋文化）に。ホアルー古都もその一部。</span><span class="vi"><b>Quần thể danh thắng Tràng An</b> là Di sản hỗn hợp (thiên nhiên + văn hoá) đầu tiên của Việt Nam; Cố đô Hoa Lư nằm trong quần thể.</span></div></li>
+  </ol>
+  <div class="psteps">
+<figure><img src="assets/wm-h-bach-dang.jpg" alt="938 – Cọc Bạch Đằng" loading="lazy" style="object-position:center 60%"><figcaption><span class="ja"><b>938 白藤江の杭</b> 満潮に隠れる木の杭で敵船を座礁させる戦法。1288年のモンゴル戦でも再び使われた（博物館の絵）。</span><span class="vi"><b>938 – Cọc Bạch Đằng</b> Cắm cọc gỗ ngầm, chờ thủy triều rút cho thuyền giặc mắc cạn; năm 1288 dùng lại chiến thuật này (tranh bảo tàng).</span><small>Gary Todd, CC0</small></figcaption></figure>
+<figure><img src="assets/wm-h-thang-long-citadel.jpg" alt="2010 – Hoàng thành Thăng Long" loading="lazy"><figcaption><span class="ja"><b>2010 タンロン皇城</b> 1000年続いた都の中心部。2010年に世界遺産に登録。</span><span class="vi"><b>2010 – Hoàng thành Thăng Long</b> Trung tâm kinh đô suốt 1000 năm, Di sản Thế giới năm 2010.</span><small>katiebordner, CC BY 2.0</small></figcaption></figure>
+</div>
+
+  <h3 style="margin:28px 0 10px;font-size:19px"><span class="ja">🗺 1000年前の「ベトナム」はこんな形</span><span class="vi">🗺 Bản đồ "Việt Nam" 1000 năm trước</span></h3>
+  <div class="grid c2" style="align-items:start">
+    <figure><a href="assets/wm-map-1000.png" target="_blank" rel="noopener"><img src="assets/wm-map-1000.png" alt="Map of mainland Southeast Asia c. 1000–1100" loading="lazy" style="aspect-ratio:auto;object-fit:contain;background:#a8daf0"></a><figcaption><span class="ja">🔍 タップで拡大。</span><span class="vi">🔍 Chạm để phóng to. </span><span class="ja">西暦1000〜1100年頃の東南アジア大陸部。青＝大越（ホアルー・大羅）、黄＝チャンパ、赤＝クメール（アンコール）</span><span class="vi">Đông Nam Á lục địa khoảng 1000–1100. Xanh = Đại Việt (Hoa Lư, Đại La), vàng = Champa, đỏ = Khmer (Angkor)</span> · Javierfv1212, CC0</figcaption></figure>
+    <div class="card">
+      <ul class="clean ja">
+        <li><b>🔵 大瞿越（のちの大越）＝今の北部だけ。</b>紅河デルタと周辺の山地、南はタインホア・ゲアン・ハティン（ほぼ今のNgang峠）まで。おなじみの「S字」はまだありません。ホアルーはデルタの南端、平野が山にぶつかる場所にあります。</li>
+        <li><b>🟡 チャンパ王国（チャム族）。</b>中部の海岸沿いはヒンドゥー文化の別の王国でした。都はインドラプラ（今のクアンナム）、1000年頃にヴィジャヤ（今のビンディン）へ。ミーソン遺跡やチャム塔は彼らの遺産。982年には黎桓がチャンパに遠征しています。</li>
+        <li><b>🔴 クメール帝国（アンコール）。</b>今のホーチミン市やメコンデルタはクメールの土地。少し後の12世紀前半にアンコール・ワットが建てられます。</li>
+        <li><b>北は宋（中国）。</b>独立を守るための緊張関係が続きました。</li>
+      </ul>
+      <ul class="clean vi">
+        <li><b>🔵 Đại Cồ Việt (sau là Đại Việt) chỉ là miền Bắc ngày nay:</b> đồng bằng sông Hồng, trung du, phía Nam đến Thanh Hóa – Nghệ An – Hà Tĩnh (khoảng Đèo Ngang). Chưa có "hình chữ S". Hoa Lư nằm ở rìa Nam đồng bằng, nơi đồng bằng gặp núi.</li>
+        <li><b>🟡 Vương quốc Champa</b> của người Chăm theo văn hoá Ấn Độ giáo trải dọc duyên hải miền Trung. Kinh đô Indrapura (Quảng Nam), khoảng năm 1000 dời vào Vijaya (Bình Định). Mỹ Sơn, tháp Chăm là di sản của họ. Năm 982 Lê Hoàn đánh Champa.</li>
+        <li><b>🔴 Đế quốc Khmer (Angkor):</b> Nam Bộ và đồng bằng sông Cửu Long ngày nay thuộc Khmer; đầu thế kỷ XII họ xây Angkor Wat.</li>
+        <li><b>Phía Bắc là nhà Tống</b> – mối đe doạ thường trực với nền độc lập.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="psteps">
+<figure><img src="assets/wm-h-my-son.jpg" alt="🟡 Thánh địa Mỹ Sơn (Champa)" loading="lazy"><figcaption><span class="ja"><b>🟡 ミーソン聖域（チャンパ）</b> チャンパ王国のヒンドゥー教の聖地。赤レンガの塔が森に残る（世界遺産）。</span><span class="vi"><b>🟡 Thánh địa Mỹ Sơn (Champa)</b> Thánh địa Ấn Độ giáo của Champa, tháp gạch đỏ giữa rừng (Di sản Thế giới).</span><small>Philip Nalangan, CC BY 4.0</small></figcaption></figure>
+<figure><img src="assets/wm-h-angkor.jpg" alt="🔴 Angkor Wat (Khmer)" loading="lazy"><figcaption><span class="ja"><b>🔴 アンコール・ワット（クメール）</b> 12世紀前半に建てられたクメール帝国の大寺院。</span><span class="vi"><b>🔴 Angkor Wat (Khmer)</b> Đền lớn của đế quốc Khmer, xây đầu thế kỷ XII.</span><small>Satdeep Gill, CC BY-SA 4.0</small></figcaption></figure>
+</div>
+  <div class="card" style="margin-top:14px">
+    <b><span class="ja">➡ 「S字」ができるまで（南進 Nam tiến）</span><span class="vi">➡ Hình chữ S hình thành thế nào (Nam tiến)</span></b>
+    <ol class="chron" style="margin-top:6px">
+      <li><div class="y">1069</div><div><span class="ja">李朝がチャンパから3州を獲得（今のクアンビン・クアンチ北部）。</span><span class="vi">Nhà Lý lấy 3 châu Bố Chính, Địa Lý, Ma Linh (Quảng Bình, bắc Quảng Trị nay).</span></div></li>
+      <li><div class="y">1306</div><div><span class="ja">陳朝の玄珍（フエン・チャン）公主がチャンパ王に嫁ぎ、その結納として烏州・里州（今のフエ周辺）を得る。</span><span class="vi">Công chúa Huyền Trân nhà Trần lấy vua Chăm Chế Mân; Đại Việt nhận châu Ô, châu Lý (vùng Huế nay).</span></div></li>
+      <li><div class="y">1471</div><div><span class="ja">黎聖宗がチャンパの都ヴィジャヤを攻略。</span><span class="vi">Lê Thánh Tông chiếm kinh đô Vijaya của Champa.</span></div></li>
+      <li><div class="y">17–18<small>c</small></div><div><span class="ja">阮氏がメコンデルタまで進出し、18世紀半ばに今の南部までが含まれる＝ほぼ現在の「S字」に。</span><span class="vi">Các chúa Nguyễn mở đất đến đồng bằng sông Cửu Long; giữa thế kỷ XVIII lãnh thổ gần như hình chữ S ngày nay.</span></div></li>
+    </ol>
+    <p class="ja" style="font-size:13.5px;margin:6px 0 0">🇯🇵 同じ頃の日本も、北海道（蝦夷地）や沖縄（琉球）はまだ「日本」ではありませんでした。国の形は千年かけて今の姿になったのです。</p>
+    <p class="vi" style="font-size:13.5px;margin:6px 0 0">🇯🇵 Nhật Bản thời đó cũng chưa bao gồm Hokkaido (Ezo) và Okinawa (Lưu Cầu) – hình hài đất nước của cả hai đều thành hình qua cả ngàn năm.</p>
+  </div>
+
+  <h3 style="margin:28px 0 10px;font-size:19px"><span class="ja">🏯 なぜホアルーが都だったのか</span><span class="vi">🏯 Vì sao chọn Hoa Lư?</span></h3>
+  <div class="grid c3">
+    <div class="card reason"><div class="ic">⛰</div><h3><span class="ja">天然の城壁</span><span class="vi">Tường thành tự nhiên</span></h3>
+      <p class="ja">約300haの盆地を石灰岩の峰が屏風のように囲む。人が築いたのは山と山の隙間を塞ぐ土と煉瓦の壁だけ。</p>
+      <p class="vi">Lòng chảo ~300 ha được núi đá vôi bao quanh như bức bình phong; chỉ cần đắp tường đất, gạch nối các khe núi.</p></div>
+    <div class="card reason"><div class="ic">🌊</div><h3><span class="ja">水の堀</span><span class="vi">Hào nước</span></h3>
+      <p class="ja">黄龍川（ホアンロン川）と周囲の湿地が天然の堀に。舟でしか近づけない要塞でした。</p>
+      <p class="vi">Sông Hoàng Long và đầm lầy xung quanh thành hào tự nhiên – một pháo đài chỉ tiếp cận được bằng thuyền.</p></div>
+    <div class="card reason"><div class="ic">🎏</div><h3><span class="ja">英雄の故郷</span><span class="vi">Quê hương người anh hùng</span></h3>
+      <p class="ja">丁部領の生まれ故郷。牛飼いの少年時代、葦の花を旗にして村の子どもたちと戦争ごっこをした逸話「葦旗の陣（cờ lau tập trận）」は今も祭りで再現されます。</p>
+      <p class="vi">Quê của Đinh Bộ Lĩnh. Tích "cờ lau tập trận" thời chăn trâu vẫn được tái hiện trong lễ hội đền vua Đinh.</p></div>
+  </div>
+  <p class="ja" style="font-size:14.5px;margin-top:10px">→ 内乱と外敵の時代、まず必要だったのは<b>「守れる都」</b>でした。</p>
+  <p class="vi" style="font-size:14.5px;margin-top:10px">→ Thời loạn lạc và giặc ngoài, điều cần nhất là <b>một kinh đô dễ phòng thủ</b>.</p>
+
+  <h3 style="margin:28px 0 10px;font-size:19px"><span class="ja">🐉 なぜ都を移したのか（1010年）</span><span class="vi">🐉 Vì sao dời đô (1010)?</span></h3>
+  <div class="grid c3">
+    <div class="card reason"><div class="ic">🔒</div><h3><span class="ja">守りには強いが、狭い</span><span class="vi">Dễ thủ nhưng chật hẹp</span></h3>
+      <p class="ja">山に囲まれた盆地は、人口・農地・交易を広げるには狭すぎた。国が安定すると「守る都」から「育てる都」が必要に。</p>
+      <p class="vi">Vùng núi bao bọc quá chật để phát triển dân cư, ruộng đất, giao thương. Khi đất nước ổn định, cần một kinh đô để "phát triển" chứ không chỉ để "giữ".</p></div>
+    <div class="card reason"><div class="ic">🧭</div><h3><span class="ja">大羅の「地の利」</span><span class="vi">"Địa lợi" của Đại La</span></h3>
+      <p class="ja">紅河のほとりの広く平らな高台で、洪水に強く、東西南北の中心。詔は「龍が蟠（わだかま）り虎が踞（うずくま）る地勢」と讃えます。</p>
+      <p class="vi">Đất rộng, bằng phẳng, cao ráo bên sông Hồng, ở giữa bốn phương – "thế rồng cuộn hổ ngồi".</p></div>
+    <div class="card reason"><div class="ic">⏳</div><h3><span class="ja">短命王朝からの脱却</span><span class="vi">Thoát khỏi vận "đoản mệnh"</span></h3>
+      <p class="ja">詔は「丁・黎の二家は私意に従い天命を軽んじたため、国運が長く続かなかった」と述べます。結果、李朝は216年続きました。</p>
+      <p class="vi">Chiếu viết: hai nhà Đinh, Lê "theo ý riêng, coi thường mệnh trời" nên vận nước ngắn ngủi. Nhà Lý sau đó tồn tại 216 năm.</p></div>
+  </div>
+
+  <div class="edict" style="margin-top:16px">
+    <div class="han">朕欲因此地利以定厥居，卿等如何？</div>
+    <p class="vi">"Trẫm muốn nhân địa lợi ấy mà định chỗ ở, các khanh nghĩ thế nào?"</p>
+    <p class="ja">「朕はこの地の利によって都を定めたいと思う。諸卿はどう思うか」</p>
+    <p style="font-size:13.5px;opacity:.88"><span class="ja">——『遷都の詔（Chiếu dời đô）』の結び。皇帝が一方的に命じるのではなく、臣下に意見を問う形で終わるのが特徴です。</span><span class="vi">— câu kết của Chiếu dời đô. Điểm đặc biệt: nhà vua kết thúc bằng việc hỏi ý kiến quần thần.</span></p>
+  </div>
+
+  <div style="margin-top:16px"><div class="callout">
+      <span class="ja"><b>🐉 昇龍伝説：</b>李太祖の船が大羅の城下に着いたとき、<b>黄金の龍が天に昇る</b>のが見えた——それで新しい都を「昇龍（タンロン）」と名付けたと伝えられます（伝説）。ハノイの街に龍のモチーフが多いのはこのため。</span>
+      <span class="vi"><b>🐉 Truyền thuyết:</b> khi thuyền vua Lý tới thành Đại La, thấy <b>rồng vàng bay lên</b>, nên đặt tên kinh đô mới là <b>Thăng Long</b> ("rồng bay lên"). Vì thế Hà Nội có rất nhiều hình tượng rồng.</span>
+    </div></div>
+<div class="psteps">
+<figure><span class="n">1</span><img src="assets/wm-ly-thai-to.jpg" alt="Tượng Lý Thái Tổ" loading="lazy"><figcaption><span class="ja"><b>李太祖像</b> 遷都を決めた李太祖。ハノイ・ホアンキエム湖畔に立つ。</span><span class="vi"><b>Tượng Lý Thái Tổ</b> Vị vua dời đô, bên hồ Hoàn Kiếm.</span><small>William Whyte, CC BY-SA 2.0</small></figcaption></figure>
+<figure><span class="n">2</span><img src="assets/wm-dr-ly-column.jpg" alt="Cột đá chạm rồng thời Lý" loading="lazy" style="object-position:center 30%"><figcaption><span class="ja"><b>李朝の龍の石柱</b> タンロン皇城から出土（11〜13世紀）。波の上を龍が巻き上がる。</span><span class="vi"><b>Cột đá chạm rồng thời Lý</b> Đào được ở Hoàng thành Thăng Long (thế kỷ XI–XIII): rồng cuộn trên sóng.</span><small>Daderot, CC0</small></figcaption></figure>
+<figure><span class="n">3</span><img src="assets/wm-dr-ly-motif.jpg" alt="Hoạ tiết rồng thời Lý" loading="lazy"><figcaption><span class="ja"><b>李朝の龍の文様</b> 蛇のように細長く、波打つ体が特徴。中国の龍より優美でしなやか。</span><span class="vi"><b>Hoạ tiết rồng thời Lý</b> Thân mảnh, uốn khúc như rắn – mềm mại hơn rồng Trung Hoa.</span><small>Quocdung01604, CC BY-SA 4.0</small></figcaption></figure>
+<figure><span class="n">4</span><img src="assets/wm-dr-kinh-thien.jpg" alt="Bậc rồng điện Kính Thiên" loading="lazy"><figcaption><span class="ja"><b>敬天殿の龍の階段</b> 皇城の正殿跡に残る石の龍（15世紀・黎朝）。龍は今もハノイの象徴。</span><span class="vi"><b>Bậc rồng điện Kính Thiên</b> Rồng đá thềm chính điện Hoàng thành (thế kỷ XV, thời Lê) – rồng vẫn là biểu tượng Hà Nội.</span><small>Gryffindor, CC BY-SA 3.0</small></figcaption></figure>
+</div>
+
+  <div class="callout green" style="margin-top:16px;font-size:13.5px">
+    <span class="ja">ℹ 2025年7月の行政再編で、ニンビン省は旧ハナム省・ナムディン省と合併し新しい「ニンビン省」に。「ホアルー」の名は現在「ホアルー坊（phường Hoa Lư）」として残っています。</span>
+    <span class="vi">ℹ Từ 1/7/2025, Ninh Bình hợp nhất với Hà Nam và Nam Định thành tỉnh Ninh Bình mới; tên "Hoa Lư" nay là phường Hoa Lư.</span>
+  </div>
+
+  <h3 id="culture" style="margin:32px 0 6px;font-size:20px;color:var(--son)"><span class="ja">🏮 1000年前のベトナムの暮らし</span><span class="vi">🏮 Đời sống người Việt 1000 năm trước</span></h3>
+  <p class="ja" style="font-size:14.5px">ホアルーに都があった頃、人々はどんな文化の中で生きていたのでしょう。日本と似ているところ、違うところを探してみてください。</p>
+  <p class="vi" style="font-size:14.5px">Thời kinh đô còn ở Hoa Lư, người Việt sống ra sao? Hãy thử tìm điểm giống và khác với Nhật Bản.</p>
+  <div class="grid c2">
+    <div class="card"><figure><img src="assets/wm-cul-chua-mot-cot.jpg" alt="Chùa Một Cột" loading="lazy"><figcaption><span class="ja">一柱寺（1049年創建・1955年再建）</span><span class="vi">Chùa Một Cột (dựng 1049, dựng lại 1955)</span> · norchas, CC BY 2.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">🙏 <span class="ja">仏教の国</span><span class="vi">Đất nước của Phật giáo</span></h3>
+      <p class="ja">僧侶は王の相談役でした。969年、丁先皇は僧・匡越（クオン・ベト）を仏教界の長「僧統」に任命。高僧・萬行（ヴァン・ハイン）は李公蘊の即位を後押ししました。ハノイの<b>一柱寺</b>は、観音菩薩の夢を見た李太宗が1049年に建てたと伝わる、池の上に一本柱で立つお寺です。</p>
+      <p class="vi">Nhà sư là cố vấn của vua. Năm 969 Đinh Tiên Hoàng phong sư Khuông Việt làm Tăng thống; thiền sư Vạn Hạnh giúp Lý Công Uẩn lên ngôi. <b>Chùa Một Cột</b> tương truyền được vua Lý Thái Tông dựng năm 1049 sau giấc mơ thấy Quán Thế Âm.</p></div>
+    <div class="card"><figure><img src="assets/wm-cul-khue-van-cac.jpg" alt="Khuê Văn Các" loading="lazy" style="object-position:center 35%"><figcaption><span class="ja">文廟の奎文閣（ハノイ）</span><span class="vi">Khuê Văn Các, Văn Miếu</span> · Daderot, CC0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">📚 <span class="ja">孔子廟と科挙の始まり</span><span class="vi">Văn Miếu và khoa thi đầu tiên</span></h3>
+      <p class="ja">遷都から60年後、李朝は<b>1070年に文廟（孔子廟）</b>、<b>1075年に最初の科挙</b>、<b>1076年に国子監</b>（ベトナム最初の大学）を開きます。仏教と並んで儒教の学問が国づくりの柱に。ハノイの文廟は今も受験生がお参りする「学問の神様」の場所です。</p>
+      <p class="vi">60 năm sau dời đô, nhà Lý lập <b>Văn Miếu (1070)</b>, mở <b>khoa thi đầu tiên (1075)</b> và <b>Quốc Tử Giám (1076)</b> – trường đại học đầu tiên. Đến nay sĩ tử vẫn đến Văn Miếu cầu may trước kỳ thi.</p></div>
+    <div class="card"><figure><img src="assets/wm-cul-roi-nuoc-rua.jpg" alt="Múa rối nước" loading="lazy"><figcaption><span class="ja">水上人形劇の金の亀</span><span class="vi">Rối nước – rùa vàng</span> · Steven C. Price, CC BY-SA 4.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">🎎 <span class="ja">水上人形劇 ＆ 王の田植え</span><span class="vi">Múa rối nước & vua cày ruộng</span></h3>
+      <p class="ja">稲作の国らしく、987年に黎桓（レ・ホアン）は自ら田を耕す儀式「籍田」を行いました。同じドイ山の寺の<b>1121年の石碑</b>には、水の上で金の亀が三つの山を背負って現れる人形劇の様子が刻まれています——今もハノイで観られる<b>水上人形劇</b>の最古の記録です。</p>
+      <p class="vi">Năm 987 Lê Hoàn lần đầu làm <b>lễ tịch điền</b> – vua tự cày ruộng ở núi Đọi. Cũng trên núi ấy, <b>bia chùa Long Đọi Sơn (1121)</b> tả cảnh rùa vàng đội ba núi nổi trên sóng nước – ghi chép sớm nhất về <b>múa rối nước</b>.</p></div>
+    <div class="card">
+      <h3 style="font-size:16px">🦷 <span class="ja">お歯黒・キンマ・刺青</span><span class="vi">Nhuộm răng, ăn trầu, xăm mình</span></h3>
+      <p class="ja">当時のベトナム人の「しるし」は<b>黒い歯</b>。キンマ（ビンロウ）を噛み、歯を黒く染める習慣は、中国人と自分たちを区別する誇りでした。日本の平安貴族の<b>お歯黒</b>とよく似ていますが、それぞれ独自に生まれた文化です。また陳朝の兵士は1285年、腕に「殺韃（モンゴルを倒せ）」の刺青を入れて戦いました。</p>
+      <p class="vi">Dấu hiệu người Việt xưa là <b>răng đen</b>: ăn trầu, nhuộm răng để phân biệt với người phương Bắc ("răng trắng như răng Ngô"). Giống tục <b>お歯黒</b> của quý tộc Heian Nhật Bản nhưng hình thành độc lập. Năm 1285 quân Trần thích chữ "Sát Thát" lên tay.</p>
+      <h3 style="font-size:16px;margin-top:12px">🪙 <span class="ja">「皇帝」とベトナム最初の硬貨</span><span class="vi">"Hoàng đế" và đồng tiền đầu tiên</span></h3>
+      <p class="ja">丁部領は国内で「皇帝」を名乗りましたが、宋からは「交趾郡王」の称号を受けました——<b>内では皇帝、外では王</b>。宮廷には大きな釜と虎の檻を置いて罪人を戒めたと記されています。970年からはベトナム最初の硬貨<b>「太平興宝」</b>（裏に「丁」の字）を鋳造しました。</p>
+      <p class="vi">Đinh Bộ Lĩnh xưng <b>Hoàng đế</b> trong nước, nhưng nhận tước "Giao Chỉ quận vương" của nhà Tống – <b>trong xưng đế, ngoài xưng vương</b>. Triều đình đặt vạc dầu, chuồng hổ để răn kẻ phạm tội. Từ năm 970 đúc đồng tiền đầu tiên <b>Thái Bình hưng bảo</b> (mặt sau có chữ 丁).</p>
+    </div>
+  </div>
+
+
+  <h3 style="margin:26px 0 6px;font-size:18px"><span class="ja">👘 衣・食・住・祭り・女性</span><span class="vi">👘 Mặc, ăn, ở, lễ hội, phụ nữ</span></h3>
+  <p class="ja" style="font-size:13.5px">※当時の記録は少なく、多くは後の時代にまとめられた史書（『大越史記全書』1479年）や中国側の記録によるものです。</p>
+  <p class="vi" style="font-size:13.5px">※ Tư liệu thời này rất ít; phần lớn dựa vào sử biên soạn về sau (Đại Việt sử ký toàn thư, 1479) và ghi chép của Trung Hoa.</p>
+  <div class="grid c2">
+    <div class="card"><figure><img src="assets/wm-life-ao-tu-than.jpg" alt="Trang phục & tóc" loading="lazy"><figcaption><span class="ja">後の時代の民族衣装（四身衣・ノンクアイタオ）</span><span class="vi">Trang phục truyền thống về sau (áo tứ thân, nón quai thao)</span> · Momili000, CC BY-SA 3.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">👕 <span class="ja">着るもの・髪型</span><span class="vi">Trang phục & tóc</span></h3>
+      <p class="ja">庶民の男性は腰布（khố）一枚で上半身は裸、女性は胸当て（yếm）に巻きスカート（váy）が基本。中国の記録はベトナム人を「<b>短い髪・刺青・裸足・黒い歯</b>」と描いています。990年、宋の使者は「足をけがしたので跪けない」と言った黎桓が、すぐ後に<b>裸足で川に入って魚を獲っている</b>のを目撃したとか。宮廷の服は宋風でしたが、1040年に李太宗は宮女に錦織を学ばせ、宋の錦を使うのをやめました。</p>
+      <p class="vi">Dân thường: nam đóng khố, cởi trần; nữ mặc yếm, váy. Sách Trung Hoa tả người Giao Chỉ "<b>tóc ngắn, xăm mình, đi chân đất, răng đen</b>". Năm 990 sứ Tống thấy Lê Hoàn – vừa viện cớ đau chân không quỳ – lại <b>lội chân đất xuống sông bắt cá</b>. Triều phục theo kiểu Tống, nhưng năm 1040 Lý Thái Tông cho cung nữ học dệt gấm, thôi dùng gấm Tống.</p></div>
+    <div class="card"><div class="mini-img" style="margin-top:0"><figure><img src="assets/wm-life-drum.jpg" alt="Hoa văn trống đồng Ngọc Lũ" loading="lazy"><figcaption><span class="ja">玉縷銅鼓の文様</span><span class="vi">Hoa văn trống đồng Ngọc Lũ</span> · Doremon360, CC BY-SA 4.0</figcaption></figure><figure><img src="assets/wm-life-tiles.jpg" alt="Ngói thời Lý, Hoàng thành" loading="lazy"><figcaption><span class="ja">皇城出土の李朝の瓦</span><span class="vi">Ngói thời Lý, Hoàng thành</span> · Nguyenkhanh159, CC BY-SA 4.0</figcaption></figure></div>
+      <h3 style="font-size:16px;margin-top:8px">🏠 <span class="ja">住まい：高床と反った屋根</span><span class="vi">Nhà ở: nhà sàn, mái cong</span></h3>
+      <p class="ja">2000年以上前のドンソン文化の<b>銅鼓</b>には、舟の形に反った屋根の<b>高床式の家</b>、臼で米をつく人、羽飾りの踊り手が描かれています。李朝の皇城跡からは、菩提樹の葉（lá đề）の形に<b>鳳凰</b>を彫った素焼きの屋根飾りが出土し、国宝になっています。庶民の家は竹・木・茅葺きだったと考えられます。</p>
+      <p class="vi"><b>Trống đồng</b> Đông Sơn (hơn 2000 năm trước) khắc <b>nhà sàn mái cong hình thuyền</b>, người giã gạo, vũ công đội lông chim. Hoàng thành Thăng Long tìm thấy ngói đất nung thời Lý hình <b>lá đề có chim phượng</b> – nay là Bảo vật quốc gia. Nhà dân có lẽ làm bằng tre, gỗ, mái tranh.</p></div>
+    <div class="card"><div class="mini-img" style="margin-top:0"><figure><img src="assets/wm-life-bowls.jpg" alt="Bát men ngọc thời Lý–Trần" loading="lazy"><figcaption><span class="ja">李〜陳朝の青磁の碗</span><span class="vi">Bát men ngọc thời Lý–Trần</span> · Daderot, CC0</figcaption></figure><figure><img src="assets/wm-life-fishsauce.jpg" alt="Chum ủ nước mắm (ngày nay)" loading="lazy"><figcaption><span class="ja">ヌクマムを熟成させる甕（現代）</span><span class="vi">Chum ủ nước mắm (ngày nay)</span> · P. Hughes, CC BY 4.0</figcaption></figure></div>
+      <h3 style="font-size:16px;margin-top:8px">🍚 <span class="ja">毎日のごはん：米・魚・野菜・ヌクマム</span><span class="vi">Ăn uống: cơm, cá, rau, nước mắm</span></h3>
+      <p class="ja">主食は水田の<b>米</b>、おかずは川や田の<b>魚</b>と野菜。李朝の頃には青磁の碗も使われました。魚醤<b>ヌクマム</b>は当時から大切な産物で、史書には997年、宋の使者が「ヌクマムを要求する」ことを口実にゆすりを働いたため、宋の皇帝が使者派遣を控えた——という話まで残っています。1013年には税の対象にもなりました（いずれも後代の史書の記録）。</p>
+      <p class="vi">Bữa ăn chính là <b>cơm</b> lúa nước, <b>cá</b> sông đồng và rau; thời Lý đã dùng bát men ngọc. <b>Nước mắm</b> là sản vật quý: sử chép năm 997 sứ Tống lấy cớ "đòi nước mắm" để sách nhiễu, khiến vua Tống thôi cử sứ; năm 1013 nước mắm bị đánh thuế (theo sử biên soạn về sau).</p></div>
+    <div class="card"><figure><img src="assets/wm-life-boatrace.jpg" alt="Lễ hội" loading="lazy"><figcaption><span class="ja">今も各地で行われる伝統の舟競争（現代・アンザン省）</span><span class="vi">Đua thuyền truyền thống ngày nay (An Giang)</span> · Mộc Viên, CC BY-SA 4.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">🎉 <span class="ja">祭り</span><span class="vi">Lễ hội</span></h3>
+      <p class="ja">987年、黎桓は王自ら田を耕す<b>籍田の儀</b>を行い、1121年の石碑には<b>水上人形劇</b>が記録されています——稲と水の国らしい行事です。ホアルーでは今も毎年旧暦3月8〜10日に<b>チュオンイエン祭</b>が開かれ、丁部領の「葦旗の陣」が再現されます。銅鼓に描かれた舟は、今も各地に残る<b>舟競争</b>の伝統を思わせます。</p>
+      <p class="vi">Năm 987 Lê Hoàn làm <b>lễ tịch điền</b>; bia năm 1121 ghi lại <b>múa rối nước</b> – lễ hội của xứ lúa nước. Ở Hoa Lư, <b>lễ hội Trường Yên</b> (8–10/3 âm lịch) vẫn tái hiện tích "cờ lau tập trận". Hình thuyền trên trống đồng gợi nhớ truyền thống <b>đua thuyền</b> còn ở nhiều nơi.</p></div>
+    <div class="card"><figure><img src="assets/wm-life-y-lan.jpg" alt="Vai trò người phụ nữ" loading="lazy" style="object-position:center 30%"><figcaption><span class="ja">李朝の倚蘭（イーラン）元妃の像</span><span class="vi">Tượng Nguyên phi Ỷ Lan</span> · Aogiapvang, PD</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">👩 <span class="ja">活躍した女性たち</span><span class="vi">Vai trò người phụ nữ</span></h3>
+      <p class="ja">ベトナムの女性は中国に比べて地位が高かったといわれます。紀元40年に漢に反乱を起こした<b>徴（チュン）姉妹</b>、248年の<b>趙夫人（バー・チュウ）</b>は今も英雄。ホアルーの<b>楊雲娥（ズオン・ヴァン・ガー）</b>は丁先皇と黎桓、二人の皇帝の皇后となり、黎朝の廟に祀られています。李朝の<b>倚蘭（イーラン）</b>は1069年、王がチャンパ遠征中に国を治め、その安定ぶりに王が奮起して勝利したと伝わります。</p>
+      <p class="vi">Phụ nữ Việt có vị thế cao hơn so với Trung Hoa. <b>Hai Bà Trưng</b> (năm 40), <b>Bà Triệu</b> (248) là anh hùng dân tộc. <b>Dương Vân Nga</b> là hoàng hậu của cả Đinh Tiên Hoàng và Lê Hoàn, được thờ ở đền vua Lê tại Hoa Lư. <b>Nguyên phi Ỷ Lan</b> nhiếp chính năm 1069 khi vua Lý Thánh Tông đánh Champa – nghe tin trong nước yên ổn, vua quyết đánh tiếp và thắng trận.</p></div>
+  </div>
+
+  <h3 style="margin:26px 0 10px;font-size:18px"><span class="ja">🇨🇳🇻🇳 中国との千年 — 支配の歴史と、分かち合う文化</span><span class="vi">🇨🇳🇻🇳 Ngàn năm với Trung Hoa — lịch sử và văn hoá chung</span></h3>
+  <div class="card">
+    <p class="ja" style="font-size:14.5px;margin-top:0"><b>「支配と抵抗」</b>と<b>「文化を分かち合う隣人」</b>——その両方が、ベトナムと中国の千年です。</p>
+    <p class="vi" style="font-size:14.5px;margin-top:0">Vừa là lịch sử <b>đô hộ và đấu tranh</b>, vừa là câu chuyện <b>hai láng giềng chia sẻ văn hoá</b> – cả hai đều là ngàn năm Việt – Trung.</p>
+    <h4 style="font-size:15px;color:var(--son);margin:10px 0 4px"><span class="ja">📜 支配の時代にもたらされたもの</span><span class="vi">📜 Những gì thời Bắc thuộc để lại</span></h4>
+    <ul class="clean ja">
+      <li><b>農業と暮らし：</b>1世紀、九真（今のタインホア周辺）の太守<b>任延（Nhâm Diên）</b>は鉄の農具を作らせて田を広げ、婚姻の礼を教えたと『後漢書』に記されています。</li>
+      <li><b>学問の祖：</b>2〜3世紀の交趾太守<b>士燮（Sĩ Nhiếp）</b>は、戦乱の中原から逃れた多くの学者を受け入れ、都ルイラウ（今のバクニン省）で漢字と儒学を教えました。ベトナムでは今も<b>「南交学祖」（南の地の学問の祖）</b>として祀られています。</li>
+      <li><b>仏教の中心地：</b>ルイラウには中国とインドの僧が集まり、早くから仏教の拠点となりました。</li>
+    </ul>
+    <ul class="clean vi">
+      <li><b>Nông nghiệp:</b> thế kỷ I, thái thú Cửu Chân <b>Nhâm Diên</b> cho đúc nông cụ sắt, khai khẩn ruộng đất, dạy lễ cưới hỏi (Hậu Hán thư).</li>
+      <li><b>Học tổ:</b> thái thú <b>Sĩ Nhiếp</b> (thế kỷ II–III) đón nhiều học giả lánh loạn, mở trường dạy chữ Hán, Nho học ở Luy Lâu (Bắc Ninh); được tôn là <b>"Nam Giao học tổ"</b>.</li>
+      <li><b>Trung tâm Phật giáo:</b> Luy Lâu quy tụ tăng sĩ Trung Hoa và Ấn Độ.</li>
+    </ul>
+    <h4 style="font-size:15px;color:var(--son);margin:12px 0 4px"><span class="ja">🏮 今も分かち合う文化</span><span class="vi">🏮 Văn hoá chung đến hôm nay</span></h4>
+    <ul class="clean ja">
+      <li><b>旧正月（テト）と中秋節</b>を祝い、家族と親孝行を大切にする価値観。</li>
+      <li><b>ことば：</b>ベトナム語の語彙の<b>約60〜70%が漢字由来</b>（漢越語）。「Việt Nam＝越南」「cảm ơn＝感恩」のように、漢字が分かると意味が見えてきます。</li>
+      <li><b>物語とドラマ：</b>『三国志』『西遊記』、金庸の武侠小説、中国の時代劇はベトナムでも世代を超えて愛され、関羽や孫悟空はみんなの知る人物です。</li>
+      <li><b>食：</b>点心（há cảo, xíu mại）や麺料理など、華人の料理はベトナムの食卓にすっかり溶け込んでいます。</li>
+      <li><b>華人（Người Hoa）</b>はベトナム54民族の一つ。ホイアンの<b>福建会館</b>などの会館、ホーチミン市<b>チョロン</b>の寺は、両国の人々が共に築いた遺産です。</li>
+    </ul>
+    <ul class="clean vi">
+      <li>Cùng đón <b>Tết Nguyên Đán, Tết Trung thu</b>, cùng đề cao gia đình, chữ hiếu.</li>
+      <li><b>Ngôn ngữ:</b> khoảng <b>60–70% từ vựng tiếng Việt</b> có gốc Hán (từ Hán Việt).</li>
+      <li><b>Văn học, phim ảnh:</b> Tam Quốc, Tây Du Ký, truyện Kim Dung, phim cổ trang Trung Quốc gắn với tuổi thơ nhiều thế hệ.</li>
+      <li><b>Ẩm thực:</b> há cảo, xíu mại, mì… của người Hoa đã thành món quen thuộc.</li>
+      <li><b>Người Hoa</b> là một trong 54 dân tộc Việt Nam; <b>Hội quán Phúc Kiến</b> (Hội An), chùa miếu ở <b>Chợ Lớn</b> là di sản chung.</li>
+    </ul>
+    <h4 style="font-size:15px;color:var(--son);margin:12px 0 4px"><span class="ja">🇻🇳 その上で育った「ベトナムらしさ」</span><span class="vi">🇻🇳 Và bản sắc Việt</span></h4>
+    <ul class="clean ja">
+      <li>約1000年（紀元前111年〜938年）の間に、漢字・儒教の官僚制度・仏教（中国とインドの両方から）が根づきました。</li>
+      <li>それでも<b>ベトナム語</b>と、お歯黒・キンマなどの<b>習慣</b>は失われませんでした。公文書は漢文でしたが、李朝の頃から漢字を応用してベトナム語を書く<b>「字喃（チューノム）」</b>が現れ、陳朝で広まります。</li>
+      <li>漢詩<b>「南国山河」</b>は、伝統的に李常傑（1077年）と結びつけられる詩で、ベトナムでは「最初の独立宣言」とも呼ばれます（作者・年代には諸説あり）。冒頭の2行：
+        <div style="margin:8px 0;padding:10px 14px;background:var(--giay-2);border-radius:10px;text-align:center">
+          <div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:700;letter-spacing:.12em;color:var(--son);line-height:1.7">南國山河南帝居<br>截然定分在天書</div>
+          <div style="font-size:13.5px;color:var(--muc-2);margin-top:4px">Nam quốc sơn hà Nam đế cư<br>Tiệt nhiên định phận tại thiên thư</div>
+        </div>
+        <span style="font-size:13.5px">「南の国の山河には、南の皇帝が住む。その境は、天の書にはっきりと定められている」——漢字・漢文で書かれていること自体が、中国文化を共有しながら自分たちの国を名乗った当時のベトナムをよく表しています。</span></li>
+    </ul>
+    <ul class="clean vi">
+      <li>Trong ~1000 năm (111 TCN – 938), chữ Hán, bộ máy quan lại Nho giáo, Phật giáo (qua cả Trung Hoa và Ấn Độ) bén rễ.</li>
+      <li>Nhưng người Việt giữ được <b>tiếng nói</b> và <b>phong tục</b> riêng. Văn bản nhà nước viết chữ Hán, còn <b>chữ Nôm</b> xuất hiện lác đác từ thời Lý, phát triển thời Trần.</li>
+      <li>Bài thơ <b>"Nam quốc sơn hà"</b> theo truyền thống gắn với Lý Thường Kiệt (1077), được gọi là "bản tuyên ngôn độc lập đầu tiên" (tác giả, niên đại còn tranh luận). Hai câu đầu:
+        <div style="margin:8px 0;padding:10px 14px;background:var(--giay-2);border-radius:10px;text-align:center">
+          <div style="font-family:'Noto Serif JP',serif;font-size:19px;font-weight:700;letter-spacing:.12em;color:var(--son);line-height:1.7">南國山河南帝居<br>截然定分在天書</div>
+          <div style="font-size:13.5px;color:var(--muc-2);margin-top:4px">Nam quốc sơn hà Nam đế cư<br>Tiệt nhiên định phận tại thiên thư</div>
+        </div>
+        <span style="font-size:13.5px">"Sông núi nước Nam vua Nam ở / Rành rành định phận tại sách trời." Bài thơ viết bằng chữ Hán – cho thấy người Việt thời ấy vừa chia sẻ văn hoá Hán, vừa khẳng định đất nước của riêng mình.</span></li>
+    </ul>
+  </div>
+
+  <h3 style="margin:26px 0 10px;font-size:18px"><span class="ja">🇯🇵 日本とのつながり</span><span class="vi">🇯🇵 Những sợi dây nối với Nhật Bản</span></h3>
+  <div class="grid c2">
+    <div class="card">
+      <h3 style="font-size:16px;color:var(--son)"><span class="ja">阿倍仲麻呂、ハノイを治める</span><span class="vi">Abe no Nakamaro từng cai quản Hà Nội</span></h3>
+      <p class="ja">百人一首「天の原 ふりさけ見れば 春日なる 三笠の山に 出でし月かも」の作者・<b>阿倍仲麻呂</b>は、唐の官僚「朝衡」として<b>761〜767年頃、安南（今のハノイ）を治める安南都護・節度使</b>を務めました。日本に帰れなかった彼は、ハノイでどんな月を見たのでしょう。</p>
+      <p class="vi">Tác giả bài thơ nổi tiếng trong Bách nhân nhất thủ, <b>Abe no Nakamaro</b> (tên Hán: Triều Hành), làm quan nhà Đường và <b>cai quản An Nam (Hà Nội nay) khoảng 761–767</b>.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;color:var(--son)"><span class="ja">チャンパの僧・仏哲と雅楽「林邑楽」</span><span class="vi">Sư Phật Triết và nhạc Lâm Ấp trong nhã nhạc Nhật</span></h3>
+      <p class="ja">林邑（チャンパ、今のベトナム中部）の僧<b>仏哲</b>は736年に来日し、752年の<b>東大寺大仏開眼供養</b>で舞楽を披露。彼が伝えた<b>「林邑楽」</b>（「菩薩」「抜頭」など）は今も雅楽として、春日若宮おん祭などで演じられています。2014年にはフエで「里帰り公演」も。</p>
+      <p class="vi">Nhà sư <b>Phật Triết</b> từ Lâm Ấp (Champa, miền Trung VN) sang Nhật năm 736, biểu diễn trong lễ khai nhãn Đại Phật chùa Tōdai-ji (752). <b>"Lâm Ấp nhạc"</b> ông truyền lại vẫn còn trong nhã nhạc gagaku; năm 2014 được biểu diễn "về quê" tại Huế.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;color:var(--son)"><span class="ja">その後：朱印船とアニオー姫</span><span class="vi">Về sau: thuyền Châu ấn và công chúa Ngọc Hoa</span></h3>
+      <p class="ja">ホアルーの時代（10〜13世紀）に大越と日本が直接交流した記録は見つかっていません。本格的な交流は17世紀。ホイアンには1590年代に日本人町の<b>「日本橋（来遠橋）」</b>が架けられ、1619年には長崎の朱印船貿易商<b>荒木宗太郎</b>が阮氏の姫<b>玉華（アニオー）</b>と結婚し、長崎に移り住みました。</p>
+      <p class="vi">Thời Hoa Lư (thế kỷ X–XIII) chưa thấy ghi chép giao lưu trực tiếp Đại Việt – Nhật Bản. Đến thế kỷ XVII: <b>Chùa Cầu Hội An</b> do người Nhật dựng (thập niên 1590); năm 1619 thương nhân <b>Araki Sotarō</b> cưới <b>công chúa Ngọc Hoa</b> của chúa Nguyễn, đưa về Nagasaki (tên Nhật "Anio").</p>
+    </div>
+    <figure><img src="assets/wm-cul-roi-nuoc.jpg" alt="Múa rối nước" loading="lazy"><figcaption><span class="ja">ハノイの水上人形劇「仙女の舞」——旅の後、ハノイでぜひ</span><span class="vi">Múa rối nước Hà Nội – "Múa tiên"</span> · Greg Willis, CC BY-SA 2.0</figcaption></figure>
+  </div>
+
+  <h3 id="character" style="margin:32px 0 6px;font-size:20px;color:var(--son)"><span class="ja">🇻🇳 歴史から読む「ベトナム人らしさ」</span><span class="vi">🇻🇳 Tính cách người Việt nhìn từ lịch sử</span></h3>
+  <div class="callout" style="font-size:13.5px;margin-bottom:12px">
+    <span class="ja">⚠ ここで紹介するのは、一部の研究者による<b>解釈</b>であり、決まった事実ではありません。ベトナムには54の民族があり、地域や世代による違いも大きいもの。目の前の一人ひとりは、それぞれ違う個人です。</span>
+    <span class="vi">⚠ Đây là <b>cách lý giải</b> của một số nhà nghiên cứu, không phải chân lý cố định. Việt Nam có 54 dân tộc, khác biệt vùng miền và thế hệ rất lớn – mỗi người là một cá nhân riêng.</span>
+  </div>
+  <p class="ja" style="font-size:14.5px">ベトナムの人は「柔軟」「適応が早い」「臨機応変」とよく言われます。それは戦争のせいだけでしょうか？ 研究者は<b>いくつもの要因が重なった</b>と考えています。</p>
+  <p class="vi" style="font-size:14.5px">Người Việt hay được nhận xét là "linh hoạt", "thích ứng nhanh", "giỏi ứng biến". Có phải chỉ vì chiến tranh? Các nhà nghiên cứu cho rằng <b>nhiều yếu tố đan xen</b>.</p>
+  <div class="grid c2">
+    <div class="card"><h3 style="font-size:16px">🌾 <span class="ja">① 稲作と気まぐれな天候</span><span class="vi">① Lúa nước và thời tiết thất thường</span></h3>
+      <p class="ja">文化研究者チャン・ゴック・テム（Trần Ngọc Thêm）は、ベトナム文化の根を<b>水田稲作</b>に見ます。洪水や台風など予測しにくい自然と共に生きるため、自然を征服するより調和し、状況に応じて<b>動的・柔軟</b>に動く思考が育った——と。一方で彼は、その裏返しとして「物事をいい加減にしがち」という面も指摘しています（概説書による要約）。</p>
+      <p class="vi">GS. Trần Ngọc Thêm coi gốc văn hoá Việt là <b>nông nghiệp lúa nước</b>: sống chung với lũ lụt, bão gió khó đoán nên chọn hoà hợp với tự nhiên, tư duy tổng hợp – biện chứng, ứng xử <b>năng động, linh hoạt</b>. Ông cũng chỉ ra mặt trái là "thói tùy tiện".</p></div>
+    <div class="card"><h3 style="font-size:16px">🔄 <span class="ja">② 取り入れて「ベトナム化」する</span><span class="vi">② Tiếp nhận rồi "Việt hoá"</span></h3>
+      <p class="ja">中国の漢字・儒教、インド由来の仏教、のちにフランス、アメリカ……。外の文化を拒むのではなく<b>取り入れて自分たちの形に変える</b>のが得意です。漢字からチューノム（字喃）を作り、仏教を土着の信仰と融合させ、フランスパンは<b>バインミー</b>に。日本が漢字から仮名を生んだのと少し似ていますね。</p>
+      <p class="vi">Chữ Hán, Nho giáo, Phật giáo, rồi văn hoá Pháp, Mỹ… người Việt không khước từ mà <b>tiếp nhận rồi Việt hoá</b>: chữ Hán thành chữ Nôm, Phật giáo hoà với tín ngưỡng dân gian, bánh mì Pháp thành <b>bánh mì Việt</b> – giống Nhật Bản sáng tạo chữ kana từ chữ Hán.</p></div>
+    <div class="card"><h3 style="font-size:16px">🛡 <span class="ja">③ 大国のはざまで生き抜く</span><span class="vi">③ Sống còn giữa các cường quốc</span></h3>
+      <p class="ja">今日の年表にもあるように、ベトナムは何度も大きな国の侵攻を受けてきました。白藤江の杭のように「<b>弱きをもって強きを制す</b>」知恵、村や家族の強い結束、理想より現実を見る<b>実利的な考え方</b>が育った、と多くの研究者は見ます。ただし戦争だけで性格が決まるわけではありません。</p>
+      <p class="vi">Như niên biểu hôm nay, Việt Nam nhiều lần đối mặt với các đế chế lớn. Từ đó hình thành trí tuệ "<b>lấy yếu chống mạnh</b>" (như cọc Bạch Đằng), sự gắn kết làng xã – gia đình, và lối nghĩ <b>thực tế</b>. Nhưng chiến tranh không phải yếu tố duy nhất.</p></div>
+    <div class="card"><h3 style="font-size:16px">🏘 <span class="ja">④ 村の自治とことわざ</span><span class="vi">④ Làng xã và tục ngữ</span></h3>
+      <p class="ja">「<b>Phép vua thua lệ làng</b>（王の法も村の掟に負ける）」——村ごとに独自の決まりを持ち、国の法と村の慣習の間でうまく折り合いをつけてきました（実際には役所の承認も必要でしたが）。「<b>Ở bầu thì tròn, ở ống thì dài</b>（ひょうたんに入れば丸く、筒に入れば長くなる）」は、人は環境に合わせて形を変える、という意味のことわざです。</p>
+      <p class="vi">"<b>Phép vua thua lệ làng</b>" – mỗi làng có hương ước riêng, người Việt quen dung hoà giữa luật nước và lệ làng (dù thực tế hương ước vẫn cần quan phê duyệt). "<b>Ở bầu thì tròn, ở ống thì dài</b>" – con người đổi hình theo môi trường sống.</p></div>
+  </div>
+
+  <h3 style="margin:22px 0 10px;font-size:17px"><span class="ja">⏳ 1000年前と今をつなぐもの</span><span class="vi">⏳ Từ 1000 năm trước đến hôm nay</span></h3>
+  <div class="card">
+    <ul class="clean ja">
+      <li><b>米</b>は今も食卓の中心。旧正月（テト）には、もち米の「バインチュン」を家族で包みます。</li>
+      <li>お歯黒は消えましたが、<b>キンマ（trầu cau）</b>は今も結婚の申し込みや結納に欠かせない縁起物です。</li>
+      <li><b>村・家族</b>のつながりは今も強く、テトには都会から故郷へ大移動が起きます。</li>
+      <li>李朝の<b>文廟</b>には、今も受験生が合格祈願に訪れます。仏教と土着の信仰が共存するのも千年来の姿です。</li>
+    </ul>
+    <ul class="clean vi">
+      <li><b>Cơm</b> vẫn là trung tâm bữa ăn; Tết cả nhà gói bánh chưng.</li>
+      <li>Răng đen không còn, nhưng <b>trầu cau</b> vẫn không thể thiếu trong lễ dạm ngõ, ăn hỏi.</li>
+      <li>Gắn bó <b>làng – gia đình</b> vẫn rất mạnh: Tết là cuộc "đại di cư" về quê.</li>
+      <li>Sĩ tử vẫn đến <b>Văn Miếu</b> cầu đỗ đạt; Phật giáo và tín ngưỡng dân gian vẫn song hành như ngàn năm trước.</li>
+    </ul>
+  </div>
+
+  <h3 style="margin:22px 0 10px;font-size:17px"><span class="ja">🤝 日本から見たベトナム、ベトナムから見た日本</span><span class="vi">🤝 Người Nhật nhìn người Việt – người Việt nhìn Nhật Bản</span></h3>
+  <div class="grid c2">
+    <div class="card">
+      <div style="font-family:var(--serif);font-size:28px;font-weight:700;color:var(--son);line-height:1.2">約68万人</div>
+      <p class="ja" style="margin-top:2px">日本に住むベトナム人（2025年末）。中国に次いで<b>2番目に多い</b>外国人グループで、技能実習・特定技能でも最大の国籍です。</p>
+      <p class="vi" style="margin-top:2px">Người Việt sinh sống tại Nhật (cuối 2025) – nhóm người nước ngoài <b>đông thứ 2</b> sau Trung Quốc, đông nhất trong thực tập sinh kỹ năng và kỹ năng đặc định.</p>
+      <div style="font-family:var(--serif);font-size:28px;font-weight:700;color:var(--son);line-height:1.2;margin-top:10px">94%</div>
+      <p class="ja" style="margin-top:2px">日本を「信頼できる」と答えたASEAN諸国の人の割合（外務省 ASEAN世論調査 2025年）。</p>
+      <p class="vi" style="margin-top:2px">Người dân ASEAN cho rằng Nhật Bản "đáng tin cậy" (khảo sát của Bộ Ngoại giao Nhật, 2025).</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;color:var(--son)"><span class="ja">一緒に働く中での印象</span><span class="vi">Ấn tượng khi làm việc cùng nhau</span></h3>
+      <p class="ja">ジェトロの現地レポートでは、日本企業の担当者が「予想以上に能力が高く、仕事に非常に積極的」と評価する一方、<b>失敗を人に知られることを恥と感じやすい（面子）</b>ため、日本式の面接質問がうまく機能しなかった例も紹介されています。また1970年代生まれと、高度成長期に育った1990年代生まれでは仕事観が違う、と<b>世代差</b>も強調しています。</p>
+      <p class="vi">Báo cáo JETRO: doanh nghiệp Nhật đánh giá nhân sự Việt "năng lực cao hơn mong đợi, rất chủ động", đồng thời lưu ý tâm lý <b>giữ thể diện</b> khi nói về thất bại, và <b>khác biệt thế hệ</b> (sinh thập niên 70 và 90 có quan niệm làm việc khác nhau).</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;color:var(--son)"><span class="ja">東遊（ドンズー）運動 — 期待と挫折の歴史</span><span class="vi">Phong trào Đông Du — hy vọng và dang dở</span></h3>
+      <p class="ja">1905年、独立運動家<b>ファン・ボイ・チャウ</b>は日露戦争に勝った日本に学ぼうと来日し、若者を留学させました（1908年には約200人）。しかし1907年に日本がフランスと協約を結ぶと運動は取り締まられ、1909年頃までに留学生は日本を去りました。良い面も苦い面も含めた、日越の古いつながりです。</p>
+      <p class="vi">Năm 1905, <b>Phan Bội Châu</b> sang Nhật, đưa thanh niên Việt sang du học (khoảng 200 người năm 1908). Năm 1907 Nhật ký hiệp ước với Pháp, phong trào bị trục xuất, kết thúc khoảng 1909 – một trang sử Việt–Nhật có cả hy vọng lẫn cay đắng.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:16px;color:var(--son)"><span class="ja">そして今</span><span class="vi">Và hôm nay</span></h3>
+      <p class="ja">1973年に国交樹立。2023年には関係を最高レベルの<b>「包括的戦略的パートナーシップ」</b>に格上げしました。この旅で一緒に笑い、食べ、歩く時間も、千年の歴史の続きの小さな1ページです。</p>
+      <p class="vi">Thiết lập quan hệ ngoại giao năm 1973; năm 2023 nâng lên <b>Đối tác chiến lược toàn diện</b>. Chuyến đi hôm nay – cùng cười, cùng ăn, cùng leo núi – cũng là một trang nhỏ nối dài câu chuyện ngàn năm ấy.</p>
+    </div>
+  </div>
+
+  <div class="card links" id="reading" style="margin-top:22px">
+    <b>📖 <span class="ja">車内で読もう — もっと知りたい人へ</span><span class="vi">Đọc trên xe — cho ai tò mò muốn tìm hiểu thêm</span></b>
+    <p class="ja" style="font-size:13px;margin:2px 0 4px">主に日本語のページです（新しいタブで開きます）。</p>
+    <p class="vi" style="font-size:13px;margin:2px 0 4px">Phần lớn là trang tiếng Nhật (mở tab mới).</p>
+      <a href="https://ja.wikipedia.org/wiki/ホアルー"><span class="ja">ホアルー — 丁朝・前黎朝の都の歴史と遺跡</span><span class="vi">Hoa Lư (JA)</span></a>
+      <a href="https://kotobank.jp/word/ホアルー"><span class="ja">コトバンク「ホアルー」— 古都の用語解説</span><span class="vi">Kotobank: Hoa Lư</span></a>
+      <a href="https://ja.wikipedia.org/wiki/丁朝"><span class="ja">丁朝 — 968年建国のベトナム最初の独立王朝</span><span class="vi">Nhà Đinh (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/前黎朝"><span class="ja">前黎朝 — 黎桓と宋との戦い</span><span class="vi">Nhà Tiền Lê (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/李朝_(ベトナム)"><span class="ja">李朝 — 昇竜（ハノイ）へ遷都した王朝</span><span class="vi">Nhà Lý (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/タンロン遺跡"><span class="ja">タンロン遺跡 — 李朝の瓦や龍が出土した皇城</span><span class="vi">Hoàng thành Thăng Long (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/ドンソン文化"><span class="ja">ドンソン文化 — 高床の家が描かれた銅鼓</span><span class="vi">Văn hoá Đông Sơn (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/士燮"><span class="ja">士燮 — 「南交学祖」と呼ばれる学問の祖</span><span class="vi">Sĩ Nhiếp (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/水上人形劇"><span class="ja">水上人形劇 — 1121年の石碑に残る伝統芸能</span><span class="vi">Múa rối nước (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/お歯黒"><span class="ja">お歯黒 — 日本とベトナムに共通する文化</span><span class="vi">Nhuộm răng đen (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/ヌクマム"><span class="ja">ヌクマム — ベトナムの魚醤</span><span class="vi">Nước mắm (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/阿倍仲麻呂"><span class="ja">阿倍仲麻呂 — ハノイを治めた遣唐留学生</span><span class="vi">Abe no Nakamaro (JA)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/仏哲"><span class="ja">仏哲 — 林邑楽を伝えたチャンパの僧</span><span class="vi">Phật Triết (JA)</span></a>
+      <a href="https://www.jetro.go.jp/biz/areareports/2019/c6f6a6f6c40a2484.html"><span class="ja">ジェトロ：ベトナム人材と働くということ</span><span class="vi">JETRO: làm việc với nhân sự Việt (JA)</span></a>
+      <a href="https://y-history.net/appendix/wh1403-135.html"><span class="ja">東遊（ドンズー）運動の解説</span><span class="vi">Phong trào Đông Du (JA)</span></a>
+      <a href="https://kotobank.jp/word/%E3%81%B5%E3%81%82%E3%82%93%E3%81%BC%E3%81%84%E3%81%A1%E3%82%84%E3%81%86-3166585"><span class="ja">コトバンク「ファン・ボイ・チャウ」</span><span class="vi">Kotobank: Phan Bội Châu (JA)</span></a>
+      <a href="https://www.moj.go.jp/isa/publications/press/13_00047.html"><span class="ja">出入国在留管理庁：在留外国人統計</span><span class="vi">Thống kê người nước ngoài tại Nhật (JA)</span></a>
+      <a href="https://allabout.co.jp/gm/gc/451046/"><span class="ja">世界遺産チャンアンの見どころ（All About）</span><span class="vi">Tràng An (JA)</span></a>
+      <a href="https://vietnam.travel/jp/places-to-go/northern-vietnam/ninh-binh"><span class="ja">ベトナム観光総局公式：ニンビン案内</span><span class="vi">Ninh Bình – Tổng cục Du lịch (JA)</span></a>
+      <a href="https://en.wikipedia.org/wiki/%E1%BB%B6_Lan"><span class="ja">倚蘭（Ỷ Lan）— 摂政を務めた李朝の元妃（英語）</span><span class="vi">Ỷ Lan (EN)</span></a>
+      <a href="https://en.wikipedia.org/wiki/D%C6%B0%C6%A1ng_V%C3%A2n_Nga"><span class="ja">楊雲娥 — 二人の皇帝の皇后（英語）</span><span class="vi">Dương Vân Nga (EN)</span></a>
+  </div>
+</section>
+
+<svg class="karst" viewBox="0 0 600 46" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 46 L0 30 C30 28 36 6 54 8 C70 10 70 32 88 32 C104 32 110 16 124 16 C140 16 140 36 158 36 C176 36 180 4 198 4 C216 4 214 34 232 34 C248 34 252 22 266 22 C282 22 284 38 300 36 C316 34 320 10 336 10 C352 10 352 32 368 32 C384 32 388 0 406 2 C424 4 420 30 436 32 C452 34 458 18 472 18 C488 18 490 36 506 36 C522 36 526 12 542 12 C558 12 558 32 574 32 C588 32 592 24 600 24 L600 46 Z"/></svg>
+
+<!-- ================= TRANG AN ================= -->
+<section id="trangan" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">参</div>
+    <div>
+      <h2><span class="ja">チャンアン — 「陸のハロン湾」</span><span class="vi">Tràng An — "Hạ Long trên cạn"</span></h2>
+      <p><span class="ja">世界複合遺産（2014）· 漢字で「長安」</span><span class="vi">Di sản thế giới hỗn hợp (2014) · chữ Hán "長安"</span></p>
+    </div>
+  </div>
+  <figure><img src="assets/wm-trangan-cave-exit.jpg" alt="Tràng An" style="aspect-ratio:16/9"><figcaption><span class="ja">洞窟を抜けると、また次の峰と水面が現れる</span><span class="vi">Ra khỏi hang là núi non và mặt nước mở ra</span> · Vyacheslav Argenberg, CC BY 4.0</figcaption></figure>
+  <div class="grid c2" style="margin-top:14px">
+    <div class="card">
+      <h3 style="font-size:17px;color:var(--son)"><span class="ja">ここが特別な理由</span><span class="vi">Vì sao đặc biệt?</span></h3>
+      <ul class="clean ja">
+        <li><b>自然＋文化の「複合遺産」</b>：石灰岩のカルスト地形（塔のような峰・洞窟・川）と、ホアルー古都の遺跡が一体で登録。</li>
+        <li><b>約3万年前の人の痕跡</b>：洞窟から先史時代の人々の暮らしの跡が見つかっています。</li>
+        <li><b>洞窟をくぐる川</b>：峰と峰の間の谷を川がつなぎ、舟で山の「中」を通り抜けられる珍しい地形。</li>
+        <li><b>「長安」</b>：中国・唐の都と同じ字。古くは都やその周辺を指す美称でした。</li>
+      </ul>
+      <ul class="clean vi">
+        <li><b>Di sản hỗn hợp</b>: địa hình karst (núi tháp, hang động, sông) và di tích Cố đô Hoa Lư được công nhận cùng nhau.</li>
+        <li><b>Dấu tích con người ~30.000 năm</b> được tìm thấy trong các hang.</li>
+        <li><b>Sông xuyên núi</b>: thuyền đi xuyên lòng núi qua các hang nước.</li>
+        <li><b>"Tràng An" (長安)</b>: cùng chữ với kinh đô nhà Đường, mỹ từ chỉ kinh kỳ.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="font-size:17px;color:var(--son)"><span class="ja">舟の上のマナーとコツ</span><span class="vi">Lưu ý trên thuyền</span></h3>
+      <ul class="clean ja">
+        <li>救命胴衣は必ず着用。舟の上で立ち上がらない。</li>
+        <li>洞窟では頭を低く。手や荷物を舟の外に出さない。スマホはストラップか袋に。</li>
+        <li>漕ぎ手は近隣の村の女性が多く、順番制で働いています。お礼にチップ（任意）を。</li>
+        <li>寺や祠では帽子を取り、静かに。肌の露出が多い服は避けて。</li>
+        <li>日陰がほぼないので帽子・日焼け止めを。</li>
+      </ul>
+      <ul class="clean vi">
+        <li>Luôn mặc áo phao, không đứng dậy trên thuyền.</li>
+        <li>Trong hang: cúi thấp, không thò tay/đồ ra ngoài, giữ chặt điện thoại.</li>
+        <li>Người chèo phần lớn là phụ nữ địa phương, chèo theo lượt; tip tuỳ tâm.</li>
+        <li>Vào đền: bỏ mũ, giữ yên lặng, trang phục kín đáo.</li>
+        <li>Ít bóng râm – mang mũ, kem chống nắng.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid c2" style="margin-top:14px">
+    <figure><img src="assets/hang-nau-ruou.jpg" alt="Hang Nấu Rượu" loading="lazy"><figcaption><span class="ja">酒造りの洞窟（第1ルート）</span><span class="vi">Hang Nấu Rượu (tuyến 1)</span></figcaption></figure>
+    <figure><img src="assets/trangan-route3.jpg" alt="Tràng An" loading="lazy"><figcaption><span class="ja">水上の楼閣（第3ルート周辺）</span><span class="vi">Thủy đình trên tuyến 3</span></figcaption></figure>
+  </div>
+  <div class="card" style="margin-top:14px;font-size:14.5px">
+    <b><span class="ja">参考：3つのルート</span><span class="vi">Tham khảo 3 tuyến</span></b>
+    <ul class="clean">
+      <li><span class="tag">1</span><span class="ja">最長・洞窟9つ。Đền Trần、Phủ Khốngに立ち寄り。</span><span class="vi">dài nhất, 9 hang; ghé Đền Trần, Phủ Khống.</span></li>
+      <li><span class="tag">2</span><span class="ja">洞窟4つ＋霊所3つ。キングコングのロケ村があった静かなルート。</span><span class="vi">4 hang + 3 điểm tâm linh; tuyến của phim trường Kong.</span></li>
+      <li><span class="tag red">3</span><span class="ja"><b>今日のルート。</b>洞窟3つ＋霊所3つ。Hang Đột（1km以上）と武林行宮が見どころ。2.5〜3時間。</span><span class="vi"><b>Tuyến hôm nay.</b> 3 hang + 3 điểm tâm linh; Hang Đột (>1 km), Hành cung Vũ Lâm. 2,5–3 tiếng.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= HANG MUA ================= -->
+<section id="hangmua" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">肆</div>
+    <div>
+      <h2><span class="ja">ハンムア — 「舞の洞窟」と臥龍の山</span><span class="vi">Hang Múa — hang múa và núi Ngọa Long</span></h2>
+      <p><span class="ja">北部ベトナム屈指の絶景スポット。「ミニ万里の長城」とも呼ばれる486段の石段</span><span class="vi">"Thánh địa sống ảo miền Bắc", "Vạn Lý Trường Thành thu nhỏ" với 486 bậc đá</span></p>
+    </div>
+  </div>
+  <figure><img src="assets/wm-hangmua-pagoda-peak.jpg" alt="Đỉnh Hang Múa" loading="lazy" style="aspect-ratio:16/10"><figcaption><span class="ja">山頂の小塔と、ふもとに広がる田園。10月は収穫後の田に水が張られた景色に</span><span class="vi">Tháp nhỏ trên đỉnh và cánh đồng dưới chân núi – tháng 10 là ruộng sau gặt</span> · Rod Waddington, CC BY-SA 2.0</figcaption></figure>
+
+  <div class="grid c2" style="margin-top:14px">
+    <div class="card">
+      <h3 style="font-size:17px;color:var(--son)"><span class="ja">📜 名前の由来と陳朝の王たち</span><span class="vi">📜 Tên gọi và các vua Trần</span></h3>
+      <p class="ja">13世紀、陳朝の初代皇帝<b>陳太宗（チャン・タイ・トン, 1218–1277）</b>は、この一帯に<b>武林行宮</b>と、修行の庵<b>「太微庵（Am Thái Vi）」</b>を築きました。行き来の途中でこのふもとの洞窟に立ち寄り、宮廷の女官たちの<b>歌と舞（Múa）</b>を楽しんだ——そこから村人たちが「舞の洞窟＝Hang Múa」と呼ぶようになったと伝えられます（伝説）。</p>
+      <p class="vi">Tương truyền thế kỷ XIII, vua <b>Trần Thái Tông</b> (1218–1277) về Hoa Lư lập <b>hành cung Vũ Lâm</b> và <b>Am Thái Vi</b>. Mỗi lần qua đây, vua thường dừng chân xem cung nữ <b>múa hát</b> trong hang dưới chân núi – dân gian gọi là Hang Múa.</p>
+      <p class="ja">この行宮はモンゴル（元）軍と戦う陳朝の拠点でもあり、のちに<b>陳仁宗</b>はここから出家の道へ進み、ベトナム独自の禅宗「竹林派」を開きます。午前に舟で訪れる<a href="#timeline">武林行宮</a>と、午後に登るハンムアは、同じ王たちの物語でつながっているのです。</p>
+      <p class="vi">Hành cung cũng là căn cứ chống quân Mông–Nguyên; <b>Trần Nhân Tông</b> từ đây đi tu, gắn với sự ra đời của Thiền phái Trúc Lâm. Hành cung Vũ Lâm (đi thuyền buổi trưa) và Hang Múa (leo buổi chiều) cùng chung một câu chuyện về các vua Trần.</p>
+    </div>
+    <figure><img src="assets/hangmua-2.jpg" alt="Đường leo Hang Múa" loading="lazy" style="aspect-ratio:4/5"><figcaption><span class="ja">国旗がはためく岩場の登山道</span><span class="vi">Lối leo giữa vách đá, cờ đỏ sao vàng tung bay</span></figcaption></figure>
+  </div>
+
+  <h3 style="margin:22px 0 10px;font-size:18px"><span class="ja">🧭 山の上のマップ</span><span class="vi">🧭 Trên đỉnh có gì?</span></h3>
+  <div class="grid c3">
+    <div class="card"><div style="font-size:24px">🪜</div><h3 style="font-size:16px;color:var(--son)"><span class="ja">486段の石段</span><span class="vi">486 bậc đá</span></h3>
+      <p class="ja">万里の長城を模した石段。両脇には龍・鳳凰・鷲の石彫り。上りは20〜45分（休みながらでOK）。</p>
+      <p class="vi">Bậc đá mô phỏng Vạn Lý Trường Thành, hai bên có tượng rồng, phượng, đại bàng bằng đá. Leo 20–45 phút.</p></div>
+    <div class="card"><div style="font-size:24px">🐉</div><h3 style="font-size:16px;color:var(--son)"><span class="ja">分かれ道：右＝龍、左＝観音</span><span class="vi">Ngã rẽ: phải = rồng, trái = Quan Âm</span></h3>
+      <p class="ja">頂上近くで道が二手に。<b>右</b>は稜線を這う石の龍と小塔（一番の写真スポット・岩場で狭い）、<b>左</b>は観音菩薩像。展望台は標高約142m。</p>
+      <p class="vi">Gần đỉnh đường chia hai: <b>phải</b> lên tượng rồng đá và tháp nhỏ (điểm chụp ảnh nổi tiếng, lối hẹp), <b>trái</b> lên tượng Quan Thế Âm Bồ Tát. Đỉnh cao ~142 m.</p></div>
+    <div class="card"><div style="font-size:24px">🌾</div><h3 style="font-size:16px;color:var(--son)"><span class="ja">見下ろす景色</span><span class="vi">Toàn cảnh</span></h3>
+      <p class="ja">タムコックの谷、蛇行する<b>ゴードン川</b>と小舟、石灰岩の峰々。黄金の稲は5〜6月、ふもとの約1haの蓮池は5〜7月が見頃。10月は夕方の光が主役です。</p>
+      <p class="vi">Thung lũng Tam Cốc, <b>sông Ngô Đồng</b> uốn lượn với thuyền nan, núi đá trùng điệp. Lúa chín tháng 5–6, đầm sen ~1 ha nở tháng 5–7; tháng 10 đẹp nhất là nắng chiều.</p></div>
+  </div>
+
+  <div class="grid c2" style="margin-top:14px">
+    <figure><img src="assets/wm-hangmua-dragon.jpg" alt="Hang Múa dragon" loading="lazy"><figcaption><span class="ja">稜線を這う龍の像「臥龍（Ngọa Long）」——山の別名も「臥龍山」</span><span class="vi">Tượng rồng trên sống núi – núi còn gọi là núi Ngọa Long</span> · Superbass, CC BY-SA 4.0</figcaption></figure>
+    <figure><img src="assets/wm-hangmua-aerial-mist.jpg" alt="Hang Múa aerial" loading="lazy"><figcaption><span class="ja">霧の朝の稜線と石段（空撮）</span><span class="vi">Sống núi và đường bậc đá trong sương sớm</span> · Jakub Hałun, CC BY 4.0</figcaption></figure>
+    <figure><img src="assets/hangmua-1.jpg" alt="Hang Múa" loading="lazy"><figcaption><span class="ja">山頂からの眺め</span><span class="vi">Cảnh nhìn từ đỉnh</span></figcaption></figure>
+    <figure><img src="assets/wm-hangmua-base-garden.jpg" alt="Hang Múa base" loading="lazy"><figcaption><span class="ja">ふもとのエリア（エコロッジ・庭園・池）。登らない人はここで休憩</span><span class="vi">Khu chân núi (ecolodge, vườn, hồ) – chỗ nghỉ cho người không leo</span> · Khoitran1957, CC BY-SA 4.0</figcaption></figure>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3 style="font-size:17px;color:var(--son)"><span class="ja">🥾 登山のポイント</span><span class="vi">🥾 Mẹo leo núi</span></h3>
+    <ul class="clean ja">
+      <li>入場 150,000ドン / 6:00〜19:00。民間のエコリゾート「Hang Múa Ecolodge」が運営。</li>
+      <li>スニーカー必須。荷物は最小限、水は必ず持参。手すりのない岩場もあるので足元に注意。</li>
+      <li>龍の峰は狭く、写真待ちの列ができることも。日没（約17:35）の30分前には下山開始を。</li>
+      <li>映画『キングコング』の撮影地として紹介されることがありますが、公式なロケ地はチャンアン・タムコック・ヴァンロンで、ハンムアは含まれません。</li>
+    </ul>
+    <ul class="clean vi">
+      <li>Vé 150.000đ, mở 6:00–19:00; do khu nghỉ dưỡng tư nhân Hang Múa Ecolodge vận hành.</li>
+      <li>Bắt buộc giày thể thao, mang ít đồ, nhớ nước; có đoạn đá không lan can.</li>
+      <li>Đỉnh rồng hẹp, có thể phải xếp hàng chụp ảnh. Xuống núi trước hoàng hôn (~17:35) khoảng 30 phút.</li>
+      <li>Hang Múa hay bị gắn với phim Kong, nhưng địa điểm quay chính thức là Tràng An, Tam Cốc, Vân Long.</li>
+    </ul>
+    <div class="btns-row">
+      <a class="btn solid" data-dir="Hang Múa, Ninh Xuân, Ninh Bình">🧭 <span class="ja">ナビ</span><span class="vi">Dẫn đường</span></a>
+      <a class="btn" href="https://vi.wikipedia.org/wiki/Hang_M%C3%BAa">📖 Wikipedia</a>
+    </div>
+  </div>
+</section>
+
+<svg class="karst" viewBox="0 0 600 46" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 46 L0 34 C20 30 26 8 40 10 C52 12 54 30 66 30 C78 30 82 2 98 4 C112 6 110 28 124 30 C140 32 146 18 158 18 C172 18 172 36 188 36 C200 36 206 6 222 8 C238 10 236 32 252 32 C266 32 270 20 282 20 C296 20 298 36 314 34 C328 32 330 0 348 2 C366 4 362 30 378 32 C392 34 398 14 412 14 C426 14 428 34 442 34 C456 34 462 10 478 12 C494 14 490 34 506 34 C520 34 524 22 538 22 C552 22 556 36 570 34 C584 32 588 20 600 22 L600 46 Z"/></svg>
+
+<!-- ================= FOOD ================= -->
+<section id="food" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">伍</div>
+    <div>
+      <h2><span class="ja">なぜニンビンは「ヤギ」なのか</span><span class="vi">Vì sao Ninh Bình nổi tiếng thịt dê?</span></h2>
+      <p><span class="ja">石灰岩の山が育てた名物</span><span class="vi">Đặc sản sinh ra từ núi đá vôi</span></p>
+    </div>
+  </div>
+  <div class="grid c2">
+    <figure><img src="assets/wm-goats.jpg" alt="Đàn dê ở Ninh Hải, Ninh Bình" loading="lazy"><figcaption><span class="ja">ニンビン・ニンハイ村のヤギの群れ</span><span class="vi">Đàn dê ở Ninh Hải, Ninh Bình</span> · Jakub Hałun, CC BY 4.0</figcaption></figure>
+    <div class="card">
+      <ol class="clean ja">
+        <li><b>山が牧場：</b>ヤギは石灰岩の崖を自在に登り、放し飼いで育ちます。</li>
+        <li><b>野草と薬草を食べる：</b>山の草木や薬草の葉を食べるため、身が締まって脂が少なく、臭みが少ない。</li>
+        <li><b>小さな耳の在来種：</b>自然の草だけで育つ在来のヤギが好まれます。</li>
+        <li><b>世界も認めた：</b>「ヤギのレモン和え（Dê tái chanh）」は2025年、世界の料理ランキングサイトTasteAtlasにランクイン。</li>
+      </ol>
+      <ol class="clean vi">
+        <li><b>Núi là đồng cỏ:</b> dê thả rông, leo vách đá vôi.</li>
+        <li><b>Ăn lá cây, cỏ thuốc:</b> thịt săn chắc, ít mỡ, ít mùi hôi.</li>
+        <li><b>Giống dê cỏ tai nhỏ</b> chỉ ăn thực vật tự nhiên được ưa chuộng.</li>
+        <li><b>Được thế giới ghi nhận:</b> dê tái chanh lọt bảng xếp hạng TasteAtlas (2025).</li>
+      </ol>
+    </div>
+  </div>
+  <h3 style="margin:22px 0 10px;font-size:18px"><span class="ja">🍽 今日のメニュー例</span><span class="vi">🍽 Thực đơn tham khảo</span></h3>
+  <div class="grid c3">
+    <div class="card"><figure><img src="assets/wm-de-tai.jpg" alt="Dê tái chanh" loading="lazy"><figcaption>Nguyễn Thanh Quang, CC BY-SA 3.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">Dê tái chanh <span class="tag gold"><span class="ja">半生・チャレンジ</span><span class="vi">tái – thử thách</span></span></h3>
+      <p class="ja">さっと湯通ししたヤギ肉をライム・レモングラス・生姜・ごま・ピーナッツで和えた一品。イチジクの葉（lá sung）で巻き、生姜入り味噌だれ（tương gừng）で。</p>
+      <p class="vi">Dê chần tái trộn chanh, sả, gừng, vừng, lạc; cuốn lá sung, chấm tương gừng.</p></div>
+    <div class="card"><figure><img src="assets/wm-com-chay.jpg" alt="Cơm cháy Ninh Bình" loading="lazy"><figcaption>Nguyễn Thanh Quang, CC BY-SA 3.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">Cơm cháy <small>（おこげ）</small></h3>
+      <p class="ja">釜底のおこげを乾かして揚げた、パリパリのおせんべい状。ヤギのあんや肉でんぶをのせて。19世紀にニンビンの若者がハノイから持ち帰ったという言い伝えも。</p>
+      <p class="vi">Cơm cháy phơi khô rán giòn, rưới sốt dê/ruốc. Tương truyền do một chàng trai Ninh Bình thế kỷ XIX mang nghề từ Hà Nội về.</p></div>
+    <div class="card">
+      <h3 style="font-size:16px">🔥 <span class="ja">その他</span><span class="vi">Các món khác</span></h3>
+      <ul class="clean">
+        <li>Dê nướng — <span class="ja">焼き</span><span class="vi">nướng</span></li>
+        <li>Dê hấp — <span class="ja">蒸し</span><span class="vi">hấp</span></li>
+        <li>Lẩu dê — <span class="ja">ヤギ鍋</span><span class="vi">lẩu</span></li>
+        <li>Nem dê — <span class="ja">ヤギの生春巻き風</span><span class="vi">nem</span></li>
+      </ul>
+      <div class="callout red" style="font-size:13.5px;margin-top:8px">
+        <span class="ja">⚠ 生き血の料理（tiết canh）や血入りの酒（rượu tiết dê）は衛生面のリスクも。無理せず「Không, cảm ơn（いいえ、結構です）」でOK。</span>
+        <span class="vi">⚠ Tiết canh, rượu tiết dê có rủi ro vệ sinh – hỏi trước, không ép khách.</span>
+      </div>
+      <div class="callout" style="font-size:13.5px;margin-top:8px">
+        <span class="ja">🍻 乾杯は「<b>モッ、ハイ、バー、ヨー！</b>」（Một, hai, ba, dô! ＝1、2、3、それっ！）</span>
+        <span class="vi">🍻 Nâng ly: "<b>Một, hai, ba, dô!</b>"</span>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin:24px 0 10px;font-size:18px"><span class="ja">🍜 ヤギ以外のニンビン名物</span><span class="vi">🍜 Đặc sản Ninh Bình ngoài dê</span></h3>
+  <div class="grid c3">
+    <div class="card"><figure><img src="assets/wm-food-nem-chua-yenmac.jpg" alt="Nem chua Yên Mạc" loading="lazy"><figcaption>Hoangvantoanajc, CC BY-SA 3.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">Nem chua Yên Mạc</h3>
+      <p class="ja">イェンマック村の<b>発酵豚肉</b>。薄切り豚肉と豚皮を炒り米粉と和え、グアバとバナナの葉で包んで自然発酵。ほんのり酸っぱく、お酒のつまみに。<small>（生発酵なので無理せず）</small></p>
+      <p class="vi">Thịt lợn, bì trộn thính, gói lá ổi + lá chuối, lên men tự nhiên; vị chua nhẹ, chấm nước mắm tỏi chanh.</p></div>
+    <div class="card"><figure><img src="assets/wm-food-rau-muong.jpg" alt="Rau muống xào tỏi" loading="lazy"><figcaption>Andy Wright, CC BY 2.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">Rau muống xào tỏi</h3>
+      <p class="ja">空芯菜のニンニク炒め。ベトナムの食卓の定番で、ヤギが苦手な人にも安心の一皿。</p>
+      <p class="vi">Món rau "quốc dân", an toàn cho người không ăn được dê.</p></div>
+    <div class="card"><figure><img src="assets/wm-food-de-nuong-da.jpg" alt="Dê nướng đá" loading="lazy"><figcaption><span class="ja">石焼きヤギ（イメージ）</span><span class="vi">Dê nướng đá (minh hoạ)</span> · Phương Huy, CC BY-SA 4.0</figcaption></figure>
+      <h3 style="font-size:16px;margin-top:8px">Dê nướng</h3>
+      <p class="ja">焼いたヤギ肉にごまをまぶして。香ばしく、ヤギ初心者にも食べやすい調理法です。</p>
+      <p class="vi">Dê nướng rắc vừng – thơm, dễ ăn cho người lần đầu thử dê.</p></div>
+  </div>
+  <div class="card" style="margin-top:14px">
+    <ul class="clean ja">
+      <li><b>🐚 オックヌイ（Ốc núi）</b>— 石灰岩の山に棲む<b>山のカタツムリ</b>。生姜と蒸して、ライム唐辛子入りの魚醤で。コリコリして甘い。主に4〜8月の季節もの。</li>
+      <li><b>🍜 ミエンルオン（Miến lươn）</b>— 揚げた<b>ウナギ</b>と春雨のスープ。骨でとった優しい出汁で、日本人の口にもよく合います（朝食・軽食向き）。</li>
+      <li><b>🦐 マムテップ（Mắm tép Gia Viễn）</b>— 赤く香り高い<b>発酵エビ味噌</b>。そのままだと強烈なので、豚肉炒め（thịt rang mắm tép）で試すのがおすすめ。</li>
+      <li><b>🐟 カーロー・トンチュオン（Cá rô Tổng Trường）</b>— ホアルーの<b>キノボリウオ</b>。かつて王への献上品だったとも伝わる。揚げや土鍋煮で。小骨が多いので注意。</li>
+      <li><b>⚠ ゴイカーニェック（Gỏi cá nhệch）</b>— キムソンの川魚の刺身サラダ。珍味ですが生の淡水魚なので、今回はおすすめしません。</li>
+    </ul>
+    <ul class="clean vi">
+      <li><b>🐚 Ốc núi</b> — ốc sống trên núi đá vôi, hấp gừng, chấm nước mắm chanh ớt; giòn, ngọt. Mùa chính khoảng tháng 4–8.</li>
+      <li><b>🍜 Miến lươn</b> — lươn chiên giòn, miến, nước dùng ngọt từ xương lươn; rất hợp khẩu vị người Nhật.</li>
+      <li><b>🦐 Mắm tép Gia Viễn</b> — mắm đỏ, thơm nồng; nên thử qua món thịt rang mắm tép.</li>
+      <li><b>🐟 Cá rô Tổng Trường</b> — cá rô Hoa Lư, tương truyền từng là sản vật tiến vua; rán giòn hoặc kho niêu, nhiều xương.</li>
+      <li><b>⚠ Gỏi cá nhệch Kim Sơn</b> — đặc sản nhưng là cá nước lợ ăn sống; không khuyến khích cho đoàn.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= KONG ================= -->
+<section id="kong" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">陸</div>
+    <div>
+      <h2><span class="ja">キングコングが来た谷</span><span class="vi">Nơi King Kong từng "sống"</span></h2>
+      <p><span class="ja">映画『キングコング：髑髏島の巨神』（2017）</span><span class="vi">Phim "Kong: Skull Island" (2017)</span></p>
+    </div>
+  </div>
+  <div class="grid c2">
+    <figure><img src="assets/wm-hero.jpg" alt="Tràng An" loading="lazy"><figcaption><span class="ja">映画の「髑髏島」そのままの風景</span><span class="vi">Khung cảnh "Đảo Đầu Lâu" ngoài đời thực</span> · Benjamin Smith, CC BY-SA 4.0</figcaption></figure>
+    <div class="card">
+      <ul class="clean ja">
+        <li>ハリウッド映画『Kong: Skull Island』は、ニンビンの<b>チャンアン・タムコック・ヴァンロン</b>、ハロン湾、クアンビン省などベトナム各地で撮影されました。</li>
+        <li>謎の島に暮らす<b>先住民の村</b>のセットがチャンアンに再建され、2017年から「コング島（Bến đảo Kong）」として公開。竹と藁の家が並びます（第2ルート、航路により第3ルートからも）。</li>
+        <li>🇯🇵 日本人アーティスト<b>MIYAVI</b>さんが、島に不時着した日本兵パイロット「グンペイ・イカリ」役で出演。冒頭のシーンを思い出してみて。</li>
+        <li>1992年のフランス映画『インドシナ』（アカデミー外国語映画賞）もタムコックで撮影されています。</li>
+      </ul>
+      <ul class="clean vi">
+        <li>"Kong: Skull Island" quay tại <b>Tràng An, Tam Cốc, Vân Long</b> (Ninh Bình), vịnh Hạ Long, Quảng Bình…</li>
+        <li>Phim trường <b>làng thổ dân</b> được dựng lại ở Tràng An, mở cửa từ 2017 (Bến đảo Kong) – trên tuyến 2, một số luồng tuyến 3 đi ngang.</li>
+        <li>🇯🇵 Nghệ sĩ Nhật <b>MIYAVI</b> đóng vai phi công Nhật Gunpei Ikari trong phim.</li>
+        <li>Phim Pháp "Đông Dương" (Indochine, 1992, Oscar phim nói tiếng nước ngoài) cũng quay ở Tam Cốc.</li>
+      </ul>
+      <div class="btns-row">
+        <a class="btn" href="https://www.youtube.com/results?search_query=Kong+Skull+Island+Vietnam+Ninh+Binh">▶ <span class="ja">ロケ地映像</span><span class="vi">Video bối cảnh</span></a>
+        <a class="btn" href="https://news.tuoitre.vn/yes-you-can-now-visit-kong-skull-island-film-set-in-northern-vietnam-1032061.htm">📰 Tuổi Trẻ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="karst" viewBox="0 0 600 46" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 46 L0 30 C30 28 36 6 54 8 C70 10 70 32 88 32 C104 32 110 16 124 16 C140 16 140 36 158 36 C176 36 180 4 198 4 C216 4 214 34 232 34 C248 34 252 22 266 22 C282 22 284 38 300 36 C316 34 320 10 336 10 C352 10 352 32 368 32 C384 32 388 0 406 2 C424 4 420 30 436 32 C452 34 458 18 472 18 C488 18 490 36 506 36 C522 36 526 12 542 12 C558 12 558 32 574 32 C588 32 592 24 600 24 L600 46 Z"/></svg>
+
+<!-- ================= KANJI ================= -->
+<section id="kanji" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">漆</div>
+    <div>
+      <h2><span class="ja">漢字で読むベトナム</span><span class="vi">Đọc Việt Nam qua chữ Hán</span></h2>
+      <p><span class="ja">ベトナム語の語彙の多くは漢語由来。地名も漢字にすると意味が見えてきます。</span><span class="vi">Phần lớn từ vựng tiếng Việt là từ Hán Việt – người Nhật có thể "đọc" địa danh qua chữ Hán.</span></p>
+    </div>
+  </div>
+  <div class="kanji">
+    <div><div class="k">華閭</div><div class="r">Hoa Lư</div><div class="m"><span class="ja">最初の都</span><span class="vi">kinh đô đầu tiên</span></div></div>
+    <div><div class="k">昇龍</div><div class="r">Thăng Long</div><div class="m"><span class="ja">龍が昇る＝旧ハノイ</span><span class="vi">rồng bay lên</span></div></div>
+    <div><div class="k">河内</div><div class="r">Hà Nội</div><div class="m"><span class="ja">川（紅河）の内側</span><span class="vi">phía trong sông</span></div></div>
+    <div><div class="k">寧平</div><div class="r">Ninh Bình</div><div class="m"><span class="ja">安寧と平和</span><span class="vi">yên ổn, bình yên</span></div></div>
+    <div><div class="k">長安</div><div class="r">Tràng An</div><div class="m"><span class="ja">唐の都と同じ字</span><span class="vi">trùng tên kinh đô Đường</span></div></div>
+    <div><div class="k">大瞿越</div><div class="r">Đại Cồ Việt</div><div class="m"><span class="ja">968年の国号</span><span class="vi">quốc hiệu năm 968</span></div></div>
+    <div><div class="k">越南</div><div class="r">Việt Nam</div><div class="m"><span class="ja">ベトナム</span><span class="vi">Việt Nam</span></div></div>
+    <div><div class="k">感恩</div><div class="r">cảm ơn</div><div class="m"><span class="ja">ありがとう</span><span class="vi">cảm ơn</span></div></div>
+    <div><div class="k">注意</div><div class="r">chú ý</div><div class="m"><span class="ja">注意（同じ意味）</span><span class="vi">chú ý</span></div></div>
+  </div>
+</section>
+
+<!-- ================= PREP ================= -->
+<section id="prep" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">捌</div>
+    <div>
+      <h2><span class="ja">持ち物・お金・ひとこと会話</span><span class="vi">Đồ mang theo · tiền · câu nói</span></h2>
+    </div>
+  </div>
+  <div class="grid c2">
+    <div class="card">
+      <h3 style="font-size:17px;color:var(--son);margin-bottom:6px">🎒 <span class="ja">持ち物チェック</span><span class="vi">Checklist</span></h3>
+      <ul class="check">
+        <li><span class="ja">スニーカー</span><span class="vi">Giày thể thao</span></li>
+        <li><span class="ja">帽子・サングラス</span><span class="vi">Mũ, kính râm</span></li>
+        <li><span class="ja">日焼け止め</span><span class="vi">Kem chống nắng</span></li>
+        <li><span class="ja">水（500ml×2）</span><span class="vi">Nước (2 chai)</span></li>
+        <li><span class="ja">現金（ドン）</span><span class="vi">Tiền mặt VND</span></li>
+        <li><span class="ja">モバイルバッテリー</span><span class="vi">Sạc dự phòng</span></li>
+        <li><span class="ja">折りたたみ雨具</span><span class="vi">Áo mưa mỏng</span></li>
+        <li><span class="ja">スマホ用防水ポーチ</span><span class="vi">Túi chống nước</span></li>
+        <li><span class="ja">ウェットティッシュ</span><span class="vi">Khăn ướt</span></li>
+        <li><span class="ja">小さめのバッグ</span><span class="vi">Túi nhỏ gọn</span></li>
+      </ul>
+      <h3 style="font-size:17px;color:var(--son);margin:14px 0 6px">💴 <span class="ja">お金の目安（1人）</span><span class="vi">Chi phí tham khảo (1 người)</span></h3>
+      <table class="phr">
+        <tr><td><span class="ja">チャンアン舟</span><span class="vi">Thuyền Tràng An</span></td><td>300.000đ</td></tr>
+        <tr><td><span class="ja">ハンムア入場</span><span class="vi">Vé Hang Múa</span></td><td>150.000đ</td></tr>
+        <tr><td><span class="ja">昼食（ヤギ）</span><span class="vi">Ăn trưa</span></td><td><span class="ja">店・注文による</span><span class="vi">tuỳ món</span></td></tr>
+        <tr><td><span class="ja">舟のチップ（任意）</span><span class="vi">Tip người chèo</span></td><td>50.000–100.000đ/<span class="ja">艘</span><span class="vi">thuyền</span></td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3 style="font-size:17px;color:var(--son);margin-bottom:6px">💬 <span class="ja">ひとこと会話</span><span class="vi">Vài câu tiếng Việt</span></h3>
+      <table class="phr">
+        <tr><td>Xin chào</td><td><span class="ja">シン チャオ — こんにちは</span><span class="vi">Chào</span></td></tr>
+        <tr><td>Cảm ơn</td><td><span class="ja">カム オン — ありがとう</span><span class="vi">Cảm ơn</span></td></tr>
+        <tr><td>Ngon quá!</td><td><span class="ja">ゴン クア — すごくおいしい！</span><span class="vi">Ngon quá!</span></td></tr>
+        <tr><td>Đẹp quá!</td><td><span class="ja">デップ クア — すごくきれい！</span><span class="vi">Đẹp quá!</span></td></tr>
+        <tr><td>Bao nhiêu tiền?</td><td><span class="ja">バオ ニュー ティエン — いくら？</span><span class="vi">Bao nhiêu tiền?</span></td></tr>
+        <tr><td>Không, cảm ơn</td><td><span class="ja">ホン、カム オン — いいえ、結構です</span><span class="vi">Không, cảm ơn</span></td></tr>
+        <tr><td>Một, hai, ba, dô!</td><td><span class="ja">モッ ハイ バー ヨー — 乾杯！</span><span class="vi">Nâng ly!</span></td></tr>
+      </table>
+      <h3 style="font-size:17px;color:var(--son);margin:14px 0 6px">🆘 <span class="ja">緊急連絡</span><span class="vi">Khẩn cấp</span></h3>
+      <table class="phr">
+        <tr><td>113 / 114 / 115</td><td><span class="ja">警察 / 消防 / 救急</span><span class="vi">Công an / Cứu hoả / Cấp cứu</span></td></tr>
+        <tr><td><a href="tel:+842293890217">(0229) 3890 217</a></td><td><span class="ja">チャンアン管理事務所</span><span class="vi">BQL Tràng An</span></td></tr>
+        <tr><td><a href="tel:0972162261">0972 162 261</a></td><td><span class="ja">レストラン Thành Long</span><span class="vi">Nhà hàng Thành Long</span></td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LINKS ================= -->
+<section id="links" class="wrap">
+  <div class="sec-h">
+    <div class="sec-no">玖</div>
+    <div><h2><span class="ja">便利リンク</span><span class="vi">Liên kết hữu ích</span></h2>
+    <p><span class="ja">すべて新しいタブで開きます</span><span class="vi">Tất cả mở trong tab mới</span></p></div>
+  </div>
+  <div class="grid c2">
+    <div class="card links">
+      <b>🗺 <span class="ja">地図</span><span class="vi">Bản đồ</span></b>
+      <a href="https://maps.app.goo.gl/m1QamjrkPUNzmjPZA"><span class="ja">全スポットリスト（Google Maps）</span><span class="vi">Danh sách địa điểm (Google Maps)</span></a>
+      <a href="https://maps.app.goo.gl/1vvyx2zfbM4LEgXf9">Grandiose Hotel &amp; Spa</a>
+      <a data-q="Nhà hàng Thành Long Vua dê Ninh Bình">Nhà hàng Thành Long – Vua dê</a>
+      <a data-q="Phố cổ Hoa Lư, Ninh Bình">Phố cổ Hoa Lư</a>
+      <a data-q="Bến thuyền Tràng An, Trường Yên, Ninh Bình">Bến thuyền Tràng An</a>
+      <a data-q="Hang Múa, Ninh Xuân, Ninh Bình">Hang Múa</a>
+      <a data-q="Đền vua Đinh Tiên Hoàng, Cố đô Hoa Lư"><span class="ja">丁先皇廟（ホアルー古都）</span><span class="vi">Đền vua Đinh Tiên Hoàng</span></a>
+    </div>
+    <div class="card links">
+      <b>📚 <span class="ja">もっと知る</span><span class="vi">Tìm hiểu thêm</span></b>
+      <a href="https://whc.unesco.org/en/list/1438">UNESCO – Trang An Landscape Complex</a>
+      <a href="https://trangandanhthang.vn">Tràng An <span class="ja">公式サイト</span><span class="vi">trang chính thức</span></a>
+      <a href="https://muave.disantrangan.vn/home/vi"><span class="ja">チャンアン チケット購入</span><span class="vi">Mua vé Tràng An online</span></a>
+      <a href="https://nhahangthanhlongninhbinh.com.vn/">Nhà hàng Thành Long</a>
+      <a href="https://viethich.com/dung-pho-nui/"><span class="ja">ニンビンのヤギ料理店レビュー（日本語）</span><span class="vi">Review quán dê Ninh Bình (tiếng Nhật)</span></a>
+      <a href="https://www.iroirosagashi.com/entry/Vietnam.ninhbinh_3days2night_travel"><span class="ja">ニンビン旅行記（日本語）</span><span class="vi">Du ký Ninh Bình (tiếng Nhật)</span></a>
+      <a href="https://ja.wikipedia.org/wiki/%E4%B8%81%E6%9C%9D">Wikipedia：<span class="ja">丁朝</span><span class="vi">Nhà Đinh (JA)</span></a>
+      <a href="https://vi.wikipedia.org/wiki/Chi%E1%BA%BFu_d%E1%BB%9Di_%C4%91%C3%B4">Wikipedia：Chiếu dời đô</a>
+      <a href="https://en.wikipedia.org/wiki/Edict_on_the_Transfer_of_the_Capital">Wikipedia：Edict on the Transfer of the Capital (EN)</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <h4>Khám phá Việt Nam · Ninh Bình 10.10.2026</h4>
+    <p><span class="ja">所要時間・料金は2026年時点の調査に基づく目安です。当日の状況（天候・水位・渋滞）で変わることがあります。</span><span class="vi">Thời gian, giá vé là thông tin tham khảo (2026); có thể thay đổi theo thời tiết, mực nước, giao thông.</span></p>
+    <h4 style="margin-top:16px"><span class="ja">写真クレジット</span><span class="vi">Nguồn ảnh</span></h4>
+    <div class="credits">
+      <div>Wikimedia Commons: <a href="https://commons.wikimedia.org/wiki/File:Trang_An_-_05.jpg">Trang An 05</a> — Benjamin Smith, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Vietnam,_Ninh_Binh,_Trang_An_Cave.jpg">Trang An Cave</a> — Vyacheslav Argenberg, CC BY 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:View_from_Hang_Mua_2.jpg">View from Hang Mua</a> — Shyamal, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:2024-03-30-Mua_Cave_Dragon_Mountain-3758.jpg">Mua Cave Dragon Mountain</a> — Superbass, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Temple_comm%C3%A9moratif_au_roi_Dinh_Tien_Hoang_(Hoa_Lu).jpg">Temple Dinh Tien Hoang</a> — Jean-Pierre Dalbéra, CC BY 2.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Gateway_to_Temple_of_Emperor_Dinh_Tien_Hoang,_10th_century_(2)_(24629111998).jpg">Gateway, Dinh Tien Hoang</a> — Richard Mortel, CC BY 2.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:T%C6%B0%E1%BB%A3ng_L%C3%BD_Th%C3%A1i_T%E1%BB%95_2.jpg">Tượng Lý Thái Tổ</a> — William Whyte, CC BY-SA 2.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Goats_in_Ninh_H%E1%BA%A3i,_Ninh_Binh_province,_Vietnam,_20240201_1521_4867.jpg">Goats in Ninh Hải</a> — Jakub Hałun, CC BY 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:T%C3%A1i_d%C3%AA.jpg">Tái dê</a>, <a href="https://commons.wikimedia.org/wiki/File:C%C6%A1m_ch%C3%A1y_Ninh_B%C3%ACnh.JPG">Cơm cháy</a> — Nguyễn Thanh Quang, CC BY-SA 3.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Map-of-southeast-asia_1000_-_1100_CE.png">Map of SE Asia 1000–1100 CE</a> — Javierfv1212, CC0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Dragon_Mountain_(29843112887).jpg">Dragon Mountain</a> — Rod Waddington, CC BY-SA 2.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Mua_Cave,_Ninh_Binh,_Vietnam,_20240202_0926_4964.jpg">Mua Cave aerial</a> — Jakub Hałun, CC BY 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:4G4A0232.jpg">Hang Múa base</a> — Khoitran1957, CC BY-SA 4.0</div>
+      <div>Food: <a href="https://commons.wikimedia.org/wiki/File:Th%E1%BB%8Bt_d%C3%AA_Ninh_B%C3%ACnh.JPG">Thịt dê Ninh Bình</a> — Nguyễn Thanh Quang, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:C%C6%A1m_ch%C3%A1y_th%E1%BB%8Bt_d%C3%AA_Ninh_B%C3%ACnh.JPG">Cơm cháy thịt dê</a> — Dongson.vmvn, CC BY-SA 3.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:%C4%90%E1%BA%B7c_s%E1%BA%A3n_m%C3%B3n_d%C3%AA_t%E1%BA%A1i_B%C3%ADch_La_Th%C3%B4n-%C4%90%C3%B4ng_H%C3%A0_2018_(12).jpg">Lẩu dê</a> — Phương Huy, PD; <a href="https://commons.wikimedia.org/wiki/File:Qu%C3%A1n_Safia,_T%E1%BA%BFt_2022_(M%C3%B3n_d%C3%AA_n%C6%B0%E1%BB%9Bng_%C4%91%C3%A1)_(1a).jpg">Dê nướng đá</a> — Phương Huy, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Nem_chua_Yen_Mac.jpg">Nem chua Yên Mạc</a> — Hoangvantoanajc, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Rau_mu%E1%BB%91ng_x%C3%A0o_t%E1%BB%8Fi.jpg">Rau muống xào tỏi</a> — Andy Wright, CC BY 2.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:TrangAn02_DenTrinh.JPG">Đền Trình</a> — Bùi Thế Tâm, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:VuLam-TrangAn.png">Vũ Lâm</a> — NKSTTSSHNVN, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Trang_An_Landscape_Complex,_Ninh_Binh_Province,_Vietnam,_20240202_1413_5244.jpg">Trang An cave</a>, <a href="https://commons.wikimedia.org/wiki/File:Trang_An_Landscape_Complex,_Ninh_Binh_Province,_Vietnam,_20240202_1433_5283.jpg">Trang An rower</a> — Jakub Hałun, CC BY 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Hang_Mua_7.jpg">Hang Mua 7</a>, <a href="https://commons.wikimedia.org/wiki/File:Hang_Mua_5.jpg">Hang Mua 5</a> — Shyamal, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Ninh_Binh_-_NinhBinh1648.jpg">Ninh Binh 1648</a> — lumoplank, CC0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Column_with_dragon_and_wave_motifs,_Thang_Long_citadel,_Hanoi,_Ly_dynasty,_11th-13th_century_AD,_carved_stone_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05538.JPG">Ly dynasty dragon column</a> — Daderot, CC0; <a href="https://commons.wikimedia.org/wiki/File:R%E1%BB%93ng_nh%C3%A0_l%C3%BD.png">Rồng nhà Lý</a> — Quocdung01604, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Hanoi_Citadel_0355.JPG">Hanoi Citadel 0355</a> — Gryffindor, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Central_Sector_of_the_Imperial_Citadel_of_Thang_Long_-_Hanoi.jpg">Imperial Citadel</a> — katiebordner, CC BY 2.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Stakes_Used_to_Repel_Mongol_Invasion_at_Bach_Dang_River,_1288_(9735656156).jpg">Bach Dang stakes</a> — Gary Todd, CC0; <a href="https://commons.wikimedia.org/wiki/File:My_Son_Sanctuary_Vietnam_02.jpg">My Son</a> — Philip Nalangan, CC BY 4.0; <a href="https://commons.wikimedia.org/wiki/File:Angkor_Wat_with_its_reflection_(cropped).jpg">Angkor Wat</a> — Satdeep Gill, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:One_Pillar_Pagoda_(6598025103).jpg">One Pillar Pagoda</a> — norchas, CC BY 2.0; <a href="https://commons.wikimedia.org/wiki/File:Constellation_of_Literature_pavilion_-_Temple_of_Literature,_Hanoi_-_DSC04553.JPG">Khuê Văn Các</a> — Daderot, CC0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Hanoi_Water_Puppets_-_Fairy_Dance_(3695189852).jpg">Water puppets</a> — Greg Willis, CC BY-SA 2.0; <a href="https://commons.wikimedia.org/wiki/File:Water-Puppet-turtle.jpg">Water-puppet turtle</a> — Steven C. Price, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:%C3%81o_t%E1%BB%A9_th%C3%A2n_1.jpg">Áo tứ thân</a> — Momili000, CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Ngoc_Lu_bronze_drum_surface.gif">Ngọc Lũ drum</a> — Doremon360, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Ng%C3%B3i_l%C6%B0u_ly_(_ng%C3%B3i_%E1%BB%91ng,_ng%C3%B3i_l%C3%B2ng_m%C3%A1ng,_ng%C3%B3i_%C3%A2m_d%C6%B0%C6%A1ng)_Vi%E1%BB%87t_Nam_khai_qu%E1%BA%ADt_t%E1%BA%A1i_Ho%C3%A0ng_Th%C3%A0nh_Th%C4%83ng_Long.jpg">Ngói Hoàng thành</a> — Nguyenkhanh159, CC BY-SA 4.0</div>
+      <div><a href="https://commons.wikimedia.org/wiki/File:Bowls_for_domestic_use,_Ly-Tran_dynasty,_11th-14th_century_AD,_celadon_glazed_ceramic_-_National_Museum_of_Vietnamese_History_-_Hanoi,_Vietnam_-_DSC05522.JPG">Ly–Tran bowls</a> — Daderot, CC0; <a href="https://commons.wikimedia.org/wiki/File:Vietnam_-_Fish_sauce_fermentation_jars.jpg">Fish sauce jars</a> — P. Hughes, CC BY 4.0; <a href="https://commons.wikimedia.org/wiki/File:%C4%90ua_thuy%E1%BB%81n_%C4%90%C3%ACnh_B%C3%ACnh_Th%E1%BB%A7y_(Ch%C3%A2u_Ph%C3%BA,_An_Giang).JPG">Đua thuyền</a> — Mộc Viên, CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Statue_of_Queen_Mother_%E1%BB%B6_Lan,_2013.png">Ỷ Lan statue</a> — Aogiapvang, PD</div>
+      <div><span class="ja">その他の写真：旅行計画資料より</span><span class="vi">Ảnh khác: từ tài liệu kế hoạch chuyến đi</span></div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+(function(){
+  var root=document.documentElement;
+  /* ---------- language ---------- */
+  function setLang(l){
+    if(['ja','vi','both'].indexOf(l)<0) l='ja';
+    root.setAttribute('data-ui',l);
+    root.setAttribute('lang',l==='vi'?'vi':'ja');
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l)});
+    try{localStorage.setItem('nb-lang',l)}catch(e){}
+    renderNow();
+  }
+  var params=new URLSearchParams(location.search);
+  var saved=null; try{saved=localStorage.getItem('nb-lang')}catch(e){}
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.set)})});
+
+  /* ---------- map links ---------- */
+  var enc=encodeURIComponent;
+  document.querySelectorAll('[data-q]').forEach(function(a){
+    if(a.tagName==='A') a.href='https://www.google.com/maps/search/?api=1&query='+enc(a.dataset.q);
+  });
+  document.querySelectorAll('a[data-dir]').forEach(function(a){
+    a.href='https://www.google.com/maps/dir/?api=1'+(a.dataset.from?'&origin='+enc(a.dataset.from):'')+'&destination='+enc(a.dataset.dir)+'&travelmode=driving';
+  });
+  document.querySelectorAll('a[data-route]').forEach(function(a){
+    a.href='https://www.google.com/maps/dir/'+a.dataset.route.split('|').map(enc).join('/');
+  });
+  /* every external link opens in a new tab */
+  document.querySelectorAll('a[href^="http"]').forEach(function(a){a.target='_blank';a.rel='noopener'});
+
+  /* ---------- now / next ---------- */
+  var TRIP='2026-10-10';
+  var items=[].slice.call(document.querySelectorAll('.tl-item'));
+  function toMin(s){var p=s.split(':');return +p[0]*60+ +p[1]}
+  function vnNow(){
+    var t=params.get('t'), d=params.get('d');
+    var f=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Ho_Chi_Minh',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());
+    var o={};f.forEach(function(x){o[x.type]=x.value});
+    var date=d||(o.year+'-'+o.month+'-'+o.day);
+    var min=t?toMin(t):(+o.hour%24)*60+ +o.minute;
+    return {date:date,min:min};
+  }
+  /* in JA+VI mode the compact bar shows Japanese; the Vietnamese title goes on the sub line */
+  function L(ja,vi){return root.getAttribute('data-ui')==='vi'?vi:ja}
+  function fmt(m){var h=Math.floor(m/60),mm=m%60;return (h?h+L('時間','h')+' ':'')+mm+L('分','p')}
+  function mapUrl(el){return 'https://www.google.com/maps/dir/?api=1&destination='+enc(el.dataset.dir)+'&travelmode=driving'}
+  function renderNow(){
+    var box=document.getElementById('now'); if(!box||!items.length) return;
+    var n=vnNow(), cur=null, next=null, i;
+    items.forEach(function(el){el.classList.remove('is-now','is-done')});
+    var lbl,ttl,sub,target;
+    if(n.date<TRIP){
+      var first=items[0];
+      lbl=L('出発日','Ngày khởi hành'); ttl=L('10月10日（土）08:15 ホテルロビー集合','Thứ Bảy 10/10 · 08:15 tập trung tại sảnh');
+      sub=L('持ち物をチェックしておきましょう','Nhớ chuẩn bị đồ dùng'); target=first;
+    }else if(n.date>TRIP){
+      lbl=L('おつかれさまでした','Cảm ơn mọi người'); ttl=L('ニンビン旅、ありがとうございました！','Chuyến đi Ninh Bình đã kết thúc!'); sub=''; target=items[items.length-1];
+    }else{
+      for(i=0;i<items.length;i++){
+        var s=toMin(items[i].dataset.start),e=toMin(items[i].dataset.end);
+        if(n.min>=e) items[i].classList.add('is-done');
+        if(n.min>=s&&n.min<e){cur=items[i];next=items[i+1]||null}
+        if(!cur&&!next&&n.min<s){next=items[i]}
+      }
+      if(cur){
+        cur.classList.add('is-now');
+        lbl=L('いま','Bây giờ')+' · '+cur.dataset.start+'–'+cur.dataset.end+' ('+L('残り','còn')+' '+fmt(toMin(cur.dataset.end)-n.min)+')';
+        ttl=L(cur.dataset.ja,cur.dataset.vi);
+        sub=next?(L('次','Tiếp theo')+' '+next.dataset.start+' → '+L(next.dataset.ja,next.dataset.vi)):L('この後解散','Sau đó giải tán');
+        target=cur;
+      }else if(next){
+        lbl=L('次','Tiếp theo')+' · '+next.dataset.start+' ('+L('あと','còn')+' '+fmt(toMin(next.dataset.start)-n.min)+')';
+        ttl=L(next.dataset.ja,next.dataset.vi); sub=''; target=next;
+      }else{
+        lbl=L('おつかれさまでした','Cảm ơn mọi người'); ttl=L('ニンビン旅、ありがとうございました！','Chuyến đi Ninh Bình đã kết thúc!'); sub=''; target=items[items.length-1];
+      }
+    }
+    document.getElementById('now-lbl').textContent=lbl;
+    document.getElementById('now-ttl').textContent=ttl;
+    if(root.getAttribute('data-ui')==='both'&&target) sub=target.dataset.vi+(sub?' · '+sub:'');
+    document.getElementById('now-sub').textContent=sub;
+    if(!target.id) target.id='step-'+items.indexOf(target);
+    document.getElementById('now-go').href='#'+target.id;
+    var m=document.getElementById('now-map'); m.href=mapUrl(target); m.target='_blank'; m.rel='noopener';
+    box.hidden=false;
+  }
+  setLang(params.get('lang')||saved||'ja');
+  setInterval(renderNow,30000);
+})();
+</script>
+</body>
+</html>
